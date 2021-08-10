@@ -8,7 +8,7 @@
     </ul>
     <div class="main-slider-carousel owl-carousel owl-theme">
 
-        <div class="slide" style="background-image: url(images/main-slider/image-1.jpg)">
+        <div class="slide" style="background: url(assets/images/slider/slide1.jpg) no-repeat center/cover">
             <div class="auto-container">
 
                 <!-- Content Column -->
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="slide" style="background-image: url(images/main-slider/image-1.jpg)">
+        <div class="slide" style="background: url(assets/images/slider/slide2.jpg) no-repeat center/cover">
             <div class="auto-container">
 
                 <!-- Content Column -->
@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <div class="slide" style="background-image: url(images/main-slider/image-1.jpg)">
+        <div class="slide" style="background: url(assets/images/slider/slide3.jpg) no-repeat center/cover">
             <div class="auto-container">
 
                 <!-- Content Column -->

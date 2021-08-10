@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Counsel Law HTML-5 Template | Homepage</title>
+    <title>Kemi Advocates</title>
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
