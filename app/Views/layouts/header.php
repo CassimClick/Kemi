@@ -60,24 +60,25 @@
 
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Home Style One</a></li>
-                                            <li><a href="index-2.html">Home Style Two</a></li>
-                                        </ul>
+                                    <li class="current"><a href="<?=base_url()?>/law">Home</a>
+
                                     </li>
-                                    <li class="dropdown"><a href="#">About</a>
-                                        <ul>
-                                            <li><a href="about.html">About us</a></li>
-                                            <li><a href="our_team.html">Our Team</a></li>
-                                        </ul>
+                                    <li class=""><a href="<?=base_url()?>/about">About</a>
+
                                     </li>
-                                    <li class="dropdown"><a href="#">Cases</a>
+                                    <li class="dropdown"><a href="#">Practice Areas</a>
                                         <ul>
-                                            <li><a href="case.html">Case Style 01</a></li>
-                                            <li><a href="case-2.html">Case Style 02</a></li>
-                                            <li><a href="case-3.html">Case Style 03</a></li>
-                                            <li><a href="case-details.html">Case Detail</a></li>
+                                            <li><a href="<?=base_url()?>/realEstate">Real Estate</a></li>
+                                            <li><a href="case-2.html">Corporate Law</a></li>
+                                            <li><a href="case-3.html">Tax Law</a></li>
+                                            <li><a href="case-details.html">Banking & Finance</a></li>
+                                            <li><a href="case-details.html">Litigation & ADR</a></li>
+                                            <li><a href="case-details.html">Competition Law</a></li>
+                                            <li><a href="case-details.html">Shipping & Trade Law</a></li>
+                                            <li><a href="case-details.html">Private Clint Service</a></li>
+                                            <li><a href="case-details.html">Energy, Oil, Gas & Mining</a></li>
+                                            <li><a href="case-details.html">Employment Labour</a></li>
+                                            <li><a href="case-details.html">Non Profit NGO</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Our Services</a>
@@ -105,19 +106,19 @@
                         <div class="outer-box clearfix">
 
                             <!-- Btn Box -->
-                            <div class="btn-box">
+                            <!-- <div class="btn-box">
                                 <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Contact
                                         US</span></a>
-                            </div>
+                            </div> -->
 
                             <!-- Phone Box -->
-                            <!-- <div class="phone-box">
+                            <div class="phone-box">
                                 <div class="box-inner">
                                     <span class="icon flaticon-smartphone-1"></span>
                                     Call US Today!
-                                    <strong>+61 3 8376 6284</strong>
+                                    <strong>+255 673 662 664</strong>
                                 </div>
-                            </div> -->
+                            </div>
 
                         </div>
                     </div>

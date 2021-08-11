@@ -5,7 +5,7 @@
             <div class="row clearfix">
 
                 <!-- Services Block -->
-                <div class="services-block col-lg-6 col-md-12 col-sm-12">
+                <div class="services-block col-lg-6 col-md-12 col-sm-12 ">
                     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="content">
                             <div class="icon flaticon-file"></div>
