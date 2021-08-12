@@ -35,7 +35,7 @@
 
 @import url('font-awesome.css');
 @import url('flaticon.css');
-/* @import url('icon.css'); */
+@import url('custom.css');
 @import url('animate.css');
 @import url('owl.css');
 @import url('animation.css');
@@ -67,13 +67,7 @@
 
  ***/
 
- :root{
-	 --primaryColor: #12829e;
-	 --lato:'Lato', sans-serif;
-	 --poppins:'Poppins', sans-serif;
-	 --montserrat:'Montserrat', sans-serif;
-	 --bellefair:'Bellefair', serif;
- }
+ 
 
 body {
 	font-family: 'Open Sans', sans-serif;
