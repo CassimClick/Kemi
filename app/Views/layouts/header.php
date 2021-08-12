@@ -75,28 +75,20 @@
                                             <li><a href="case-details.html">Litigation & ADR</a></li>
                                             <li><a href="case-details.html">Competition Law</a></li>
                                             <li><a href="case-details.html">Shipping & Trade Law</a></li>
-                                            <li><a href="case-details.html">Private Clint Service</a></li>
+                                            <li><a href="case-details.html">Private Client Service</a></li>
                                             <li><a href="case-details.html">Energy, Oil, Gas & Mining</a></li>
                                             <li><a href="case-details.html">Employment Labour</a></li>
                                             <li><a href="case-details.html">Non Profit NGO</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Our Services</a>
+                                    <li class="dropdown"><a href="#">Insight</a>
                                         <ul>
-                                            <li><a href="services_style_01.html">Services Style 01</a></li>
-                                            <li><a href="services_style_02.html">Services Style 02</a></li>
-                                            <li><a href="corporate_law.html">Corporate Law</a></li>
-                                            <li><a href="real_estate_law.html">Real Estate Law</a></li>
-                                            <li><a href="insurance_law.html">Insurance Law</a></li>
-                                            <li><a href="family_law.html">Family Law</a></li>
+                                            <li><a href="<?=base_url()?>/news">News</a></li>
+                                            <li><a href="<?=base_url()?>/publications">Publications</a></li>
+
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Our Blog</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
+
                                     <li><a href="contact.html">Contact us</a></li>
                                 </ul>
                             </div>

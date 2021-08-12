@@ -1,3 +1,6 @@
+
+
+
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/flaticon.eot");
@@ -224,3 +227,48 @@
 .flaticon-injury:before { content: "\f1c7"; }
 .flaticon-lobal:before { content: "\f1c8"; }
 .flaticon-man:before { content: "\f1c9"; }
+
+/* ============================== */
+
+.flaticon-money:before {
+    content: "\f101";
+}
+.flaticon-hammer:before {
+    content: "\f102";
+}
+.flaticon-bar-graph:before {
+    content: "\f103";
+}
+.flaticon-money-bag:before {
+    content: "\f104";
+}
+.flaticon-money-bag-1:before {
+    content: "\f105";
+}
+.flaticon-coins:before {
+    content: "\f106";
+}
+.flaticon-bank:before {
+    content: "\f107";
+}
+.flaticon-stage:before {
+    content: "\f108";
+}
+.flaticon-building:before {
+    content: "\f109";
+}
+.flaticon-cargo-ship:before {
+    content: "\f10a";
+}
+.flaticon-ship:before {
+    content: "\f10b";
+}
+.flaticon-lightbulb:before {
+    content: "\f10c";
+}
+.flaticon-user:before {
+    content: "\f10d";
+}
+.flaticon-building-1:before {
+    content: "\f10e";
+}

@@ -15,13 +15,12 @@
                         <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                             <div class="footer-widget logo-widget">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    <a href="index.html"><img src="assets/images/logo.png" alt="" /></a>
                                 </div>
-                                <div class="text">Quis autem vel eum iure reprehenderit aui ea voluptate velit esse
-                                    molestiae consequatur, vel illum qui dolorem.</div>
+                                <div class="text">Our Social Profiles</div>
                                 <!-- Social Nav -->
                                 <ul class="social-nav">
-                                    <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                                     <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                                     <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                                 </ul>

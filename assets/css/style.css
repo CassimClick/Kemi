@@ -35,6 +35,7 @@
 
 @import url('font-awesome.css');
 @import url('flaticon.css');
+@import url('icon.css');
 @import url('animate.css');
 @import url('owl.css');
 @import url('animation.css');
@@ -71,6 +72,7 @@
 	 --lato:'Lato', sans-serif;
 	 --poppins:'Poppins', sans-serif;
 	 --montserrat:'Montserrat', sans-serif;
+	 --bellefair:'Bellefair', serif;
  }
 
 body {
@@ -1371,7 +1373,7 @@ img{
 	right:0px;
 	bottom:0px;
 	z-index:2;
-	background-color:rgba(17, 17, 17, 0.445); 
+	background-color:rgba(0, 0, 0, 0.651); 
 	/* mask */
 }
 
@@ -1385,6 +1387,7 @@ img{
 .banner-section .content-column{
 	position:relative;
 	z-index:10;
+	margin-left: 10px;
 }
 
 .banner-section .content-column .inner-column{
@@ -1445,6 +1448,8 @@ img{
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
+	font-family: var(--bellefair);
+	font-size: 4rem;
 }
 
 .banner-section .active .content-column h1{
@@ -1460,7 +1465,9 @@ img{
 .banner-section .content-column .text{
 	position:relative;
 	color:#ffffff;
-	font-size:22px;
+	font-family: var(--lato);
+	font-weight: 300;
+	font-size:17px;
 	margin-top:15px;
 	margin-bottom:30px;
 	font-weight:400;
@@ -1739,9 +1746,9 @@ img{
 .welcome-section{
 	position:relative;
 	padding-top:90px;
-	padding-bottom:190px;
-	background-color:#f9f9f9;
-	background-position:right bottom;
+	padding-bottom:90px;
+	background-color:#eeeded;
+	/* background-position:right bottom; */
 	background-repeat:no-repeat;
 }
 
@@ -1763,11 +1770,16 @@ img{
 
 .welcome-section .image-column .image{
 	position:relative;
+	height: 100%;
+	/* height:500px; */
 }
 
 .welcome-section .image-column .image img{
 	position:relative;
 	width:100%;
+	/* height: 919px; */
+	height:calc(100% + 220px) ;
+	object-fit: contain;
 	display:block;
 }
 
@@ -2123,7 +2135,7 @@ img{
 
 .practice-section .inner-container{
 	position:relative;
-	border:1px solid #e1e1e1;
+	/* border:1px solid #e7e7e7; */
 }
 
 .practice-section .inner-container:before{
@@ -2133,7 +2145,7 @@ img{
 	top:-1px;
 	right:-2px;
 	bottom:-2px;
-	border:3px solid #ffffff;
+	/* border:3px solid #e7e7e7; */
 }
 
 .practice-section .inner-container:after{
@@ -2143,7 +2155,7 @@ img{
 	top:50%;
 	height:1px;
 	width:100%;
-	border-bottom:1px solid #e1e1e1;
+	/* border-bottom:1px solid #e1e1e1; */
 }
 
 .practice-section .inner-container .practice-block{
@@ -2151,8 +2163,8 @@ img{
 	float:left;
 }
 
-.practice-section .inner-container .practice-block:nth-child(4n + 0) .inner-box{
-	border-right:0px;
+.practice-section .inner-container .practice-block:nth-child(5n + 0) .inner-box{
+	/* border-right:0px; */
 }
 
 .practice-block{
@@ -2164,7 +2176,10 @@ img{
 	text-align:center;
 	padding:40px 15px;
 	background-color:#ffffff;
-	border-right:1px solid #e1e1e1;
+	margin: 5px;
+	border:1px solid #e9e9e9;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 4px;
 }
 
 .practice-block .inner-box:before{

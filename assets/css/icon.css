@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../MyFonts/") format("truetype"),
+url("../MyFonts/flaticon.woff?d5e1e59b744c2f0869c1f949339b533e") format("woff"),
+url("../MyFonts/flaticon.woff2?d5e1e59b744c2f0869c1f949339b533e") format("woff2"),
+url("../MyFonts/flaticon.eot?d5e1e59b744c2f0869c1f949339b533e#iefix") format("embedded-opentype"),
+url("../MyFonts/flaticon.svg?d5e1e59b744c2f0869c1f949339b533e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-money:before {
+    content: "\f101";
+}
+.flaticon-hammer:before {
+    content: "\f102";
+}
+.flaticon-bar-graph:before {
+    content: "\f103";
+}
+.flaticon-money-bag:before {
+    content: "\f104";
+}
+.flaticon-money-bag-1:before {
+    content: "\f105";
+}
+.flaticon-coins:before {
+    content: "\f106";
+}
+.flaticon-bank:before {
+    content: "\f107";
+}
+.flaticon-stage:before {
+    content: "\f108";
+}
+.flaticon-building:before {
+    content: "\f109";
+}
+.flaticon-cargo-ship:before {
+    content: "\f10a";
+}
+.flaticon-ship:before {
+    content: "\f10b";
+}
+.flaticon-lightbulb:before {
+    content: "\f10c";
+}
+.flaticon-user:before {
+    content: "\f10d";
+}
+.flaticon-building-1:before {
+    content: "\f10e";
+}
