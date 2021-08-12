@@ -21,7 +21,7 @@
                         </div>
                         <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
-                                    <i class="arrow flaticon-right"></i></span></a>
+                                    <span class="arrow flaticon-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                             sales</div>
                         <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
-                                    <i class="arrow flaticon-right"></i></span></a>
+                                    <span class="arrow flaticon-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                             agreements and securities.</div>
                         <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
-                                    <i class="arrow flaticon-right"></i></span></a>
+                                    <span class="arrow flaticon-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                             since we have the aforesaid expertise</div>
                         <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
-                                    <i class="arrow flaticon-right"></i></span></a>
+                                    <span class="arrow flaticon-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                             Commercial Litigation, Corporate Law Issues.</div>
                         <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
-                                    <i class="arrow flaticon-right"></i></span></a>
+                                    <span class="flaticon flaticon-right"></span></span></a>
                         </div>
                     </div>
                 </div>

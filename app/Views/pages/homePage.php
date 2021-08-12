@@ -3,4 +3,5 @@
 <?=$this->include('components/banner')?>
 <?=$this->include('components/welcome')?>
 <?=$this->include('components/practice.php')?>
+<?=$this->include('components/recentNews.php')?>
 <?=$this->endSection();

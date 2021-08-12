@@ -40,7 +40,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     content: "\f107";
 }
 .flaticon-stage:before {
-    content: "\f108";
+    content: "\f10";
 }
 .flaticon-building:before {
     content: "\f109";

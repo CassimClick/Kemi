@@ -35,7 +35,7 @@
 
 @import url('font-awesome.css');
 @import url('flaticon.css');
-@import url('icon.css');
+/* @import url('icon.css'); */
 @import url('animate.css');
 @import url('owl.css');
 @import url('animation.css');
@@ -263,7 +263,7 @@ img{
 
 .list-style-one li:before{
 	position:absolute;
-	content: "\f1a3";
+	content: "\f11f";
 	left:0px;
 	top:5px;
 	color:var(--primaryColor);

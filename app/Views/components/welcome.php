@@ -44,9 +44,9 @@
                         </ul>
                         <div class="btns-box">
                             <a href="<?=base_url()?>/contact" class="theme-btn btn-style-two"><span class="txt">Get a
-                                    quote <i class="arrow flaticon-right"></i></span></a>
+                                    quote <span class="arrow flaticon-right"></span></span></a>
                             <a href="<?=base_url()?>/about" class="theme-btn btn-style-three"><span class="txt">Read
-                                    more <i class="arrow flaticon-right"></i></span></a>
+                                    more <span class="arrow flaticon-right"></span></span></a>
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@
                 <!-- Practice Block -->
                 <div class="practice-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon flaticon-building"></div>
+                        <div class="icon flaticon-building-1"></div>
                         <h5><a href="corporate_law.html">Corporate Law</a></h5>
                         <!-- <div class="text">Quis autem velo eum iure suam nihil molestiae</div> -->
                         <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
@@ -61,7 +61,7 @@
                 <!-- Practice Block -->
                 <div class="practice-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon flaticon-stage"></div>
+                        <div class="icon flaticon-competition"></div>
                         <h5><a href="corporate_law.html">Competition Law</a></h5>
                         <!-- <div class="text">Quis autem velo eum iure suam nihil molestiae</div> -->
                         <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
@@ -81,7 +81,7 @@
                 <!-- Practice Block -->
                 <div class="practice-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon flaticon-user"></div>
+                        <div class="icon flaticon-user-1"></div>
                         <h5><a href="corporate_law.html">Private CLient Service</a></h5>
                         <!-- <div class="text">Quis autem velo eum iure suam nihil molestiae</div> -->
                         <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
@@ -99,7 +99,7 @@
                 <!-- Practice Block -->
                 <div class="practice-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon flaticon-briefcase"></div>
+                        <div class="icon flaticon-balance"></div>
                         <h5><a href="corporate_law.html">Employment & Labour</a></h5>
                         <!-- <div class="text">Quis autem velo eum iure suam nihil molestiae</div> -->
                         <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>

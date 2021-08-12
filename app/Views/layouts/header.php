@@ -154,7 +154,7 @@
             <!-- Mobile Menu  -->
             <div class="mobile-menu">
                 <div class="menu-backdrop"></div>
-                <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+                <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>
 
                 <nav class="menu-box">
                     <div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
