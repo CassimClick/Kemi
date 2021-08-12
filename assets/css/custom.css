@@ -1,0 +1,97 @@
+:root {
+  --primaryColor: #12829e;
+  --lato:'Lato', sans-serif;
+  --poppins:'Poppins', sans-serif;
+  --montserrat:'Montserrat', sans-serif;
+  --bellefair:'Bellefair', serif;
+}
+
+.recent-news {
+  background: #fafafa;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.recent-news .newsBlock {
+  background: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 4px;
+}
+
+.recent-news .newsBlock .image {
+  height: 170;
+  position: relative;
+}
+
+.recent-news .newsBlock .image img {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.recent-news .newsBlock .ribbon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
+  background: rgba(27, 27, 27, 0.685);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-weight: 300;
+}
+
+.recent-news .newsBlock .ribbon .calender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recent-news .newsBlock .details {
+  padding: 0.5rem  .9rem 1rem 0.9rem;
+}
+
+.recent-news .newsBlock .details .news-btn {
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
+  text-decoration: none;
+  padding: 0.5rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.recent-news .newsBlock .details .news-btn:hover {
+  background: #0b5466;
+  color: #fff;
+  border: 0;
+}
+
+.recent-news .news-all {
+  background: var(--primaryColor);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.recent-news .news-all:hover {
+  background: #0b5466;
+  color: #fff;
+  border: 0;
+}
+/*# sourceMappingURL=custom.css.map */
