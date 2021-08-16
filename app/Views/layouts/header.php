@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kemi Advocates</title>
+    <title><?=$title?></title>
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -63,7 +63,7 @@
                                     <li class="current"><a href="<?=base_url()?>/law">Home</a>
 
                                     </li>
-                                    <li class=""><a href="<?=base_url()?>/about">About</a>
+                                    <li class=""><a href="<?=base_url()?>/law/about">About</a>
 
                                     </li>
                                     <li class="dropdown"><a href="#">Practice Areas</a>
@@ -137,9 +137,13 @@
                         <div class="outer-box clearfix">
 
                             <!-- Btn Box -->
-                            <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Contact
-                                        US</span></a>
+                            <!-- Phone Box -->
+                            <div class="phone-box">
+                                <div class="box-inner" style="color: #12829e;">
+                                    <span style="color: #12829e;" class=" icon flaticon-smartphone-1"></span>
+                                    Call US Today!
+                                    <strong style="color: #12829e;">+255 673 662 664</strong>
+                                </div>
                             </div>
 
                             <!-- Mobile Navigation Toggler -->

@@ -1,15 +1,19 @@
 :root {
   --primaryColor: #12829e;
-  --lato:'Lato', sans-serif;
-  --poppins:'Poppins', sans-serif;
-  --montserrat:'Montserrat', sans-serif;
-  --bellefair:'Bellefair', serif;
+  --lato: 'Lato', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --bellefair: 'Bellefair', serif;
 }
 
 .recent-news {
-  background: #fafafa;
+  background: #f0efef;
   width: 100%;
   padding: 2rem 0;
+}
+
+.recent-news .heading {
+  margin-bottom: 0.7rem;
 }
 
 .recent-news .newsBlock {
@@ -62,7 +66,14 @@
 }
 
 .recent-news .newsBlock .details {
-  padding: 0.5rem  .9rem 1rem 0.9rem;
+  padding: 0.5rem .9rem 1rem 0.9rem;
+}
+
+.recent-news .newsBlock .details .title {
+  color: #494949;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: block;
 }
 
 .recent-news .newsBlock .details .news-btn {

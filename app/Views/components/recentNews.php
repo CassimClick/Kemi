@@ -1,6 +1,6 @@
 <section class="recent-news">
     <div class="auto-container">
-        <h3>Recent News</h3>
+        <h3 class="heading">Recent News</h3>
         <div class="inner-container">
             <div class="row clearfix">
 

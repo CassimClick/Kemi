@@ -100,7 +100,7 @@
     </div>
     <div class="footer-bottom">
         <div class="auto-container">
-            <div class="copyright">Copyright 2021, Counsel Law Firm. All Rights Reserved.</div>
+            <div class="copyright">Copyright <?=date('Y')?>, Kemi Advocates. All Rights Reserved.</div>
         </div>
     </div>
 </footer>

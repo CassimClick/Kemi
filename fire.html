@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire</title>
+</head>
+
+<body>
+    <script>
+        //=================drivers info in general assume it comes from firebase
+        const driverIfo = [{
+                token: 'cdw46840',
+                id: 'd01'
+            },
+            {
+                token: 'arw0184',
+                id: 'd02'
+            },
+            {
+                token: 'zqp41031',
+                id: 'd03'
+            },
+            {
+                token: 'mbb4552',
+                id: 'd04'
+            },
+            {
+                token: 'ats4037',
+                id: 'd05'
+            },
+            {
+                token: 'mbb4552',
+                id: 'd06'
+            },
+        ]
+        //drivers ids assume ndio object ya mda ule
+
+        const driverIds = ['d01', 'd02', 'd05']
+
+
+        const finalDriverTokenArray = [] // empty array later tuna push tokens humo
+
+        //function to filer token if id matches
+        const driverWithToken = (id) => {
+            //filtering driver info object comes from firebase
+            driverIfo.filter(data => data.id === id).map((t) => {
+                finalDriverTokenArray.push(t.token)
+            })
+            // console.log(newData);
+        }
+
+        //loop through driver id object we obtained earlier, so after each iteration we call driverWithToken() method and pass id which will be used to compare with id from driver info and grab token
+        driverIds.forEach((id) => {
+            driverWithToken(id)
+        })
+
+
+        //here u can see array of tokens u can use wherever u want
+        console.log(finalDriverTokenArray);
+
+        /*=================NOTE====================
+
+         kwenye driver info kuna 6 object au drivers but id zipo 3 so ita take only 3 drivers and leave the rest
+
+
+        */
+    </script>
+
+</body>
+
+</html>
