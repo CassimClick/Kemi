@@ -138,3 +138,30 @@ url("../fonts/flaticon.svg") format("svg");
 .flaticon-cancel-1:before {
     content: "\f128";
 }
+.flaticon-statistics:before {
+    content: "\f129";
+}
+.flaticon-energy-saving:before {
+    content: "\f12a";
+}
+.flaticon-insurance:before {
+    content: "\f12b";
+}
+.flaticon-worker:before {
+    content: "\f12c";
+}
+.flaticon-briefcase:before {
+    content: "\f12d";
+}
+.flaticon-briefcase-1:before {
+    content: "\f12e";
+}
+.flaticon-target:before {
+    content: "\f12f";
+}
+.flaticon-binoculars:before {
+    content: "\f130";
+}
+.flaticon-eye:before {
+    content: "\f131";
+}

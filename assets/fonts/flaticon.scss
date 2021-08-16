@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?b831d3b71d870ab099664b586496cf0f") format("truetype"),
-url("./flaticon.woff?b831d3b71d870ab099664b586496cf0f") format("woff"),
-url("./flaticon.woff2?b831d3b71d870ab099664b586496cf0f") format("woff2"),
-url("./flaticon.eot?b831d3b71d870ab099664b586496cf0f#iefix") format("embedded-opentype"),
-url("./flaticon.svg?b831d3b71d870ab099664b586496cf0f#flaticon") format("svg");
+    src: url("./flaticon.ttf?8e179cc548db067c73f9ec1ee28c5aad") format("truetype"),
+url("./flaticon.woff?8e179cc548db067c73f9ec1ee28c5aad") format("woff"),
+url("./flaticon.woff2?8e179cc548db067c73f9ec1ee28c5aad") format("woff2"),
+url("./flaticon.eot?8e179cc548db067c73f9ec1ee28c5aad#iefix") format("embedded-opentype"),
+url("./flaticon.svg?8e179cc548db067c73f9ec1ee28c5aad#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -61,6 +61,15 @@ $flaticon-map: (
     "smartphone-1": "\f126",
     "cancel": "\f127",
     "cancel-1": "\f128",
+    "statistics": "\f129",
+    "energy-saving": "\f12a",
+    "insurance": "\f12b",
+    "worker": "\f12c",
+    "briefcase": "\f12d",
+    "briefcase-1": "\f12e",
+    "target": "\f12f",
+    "binoculars": "\f130",
+    "eye": "\f131",
 );
 
 .flaticon-money:before {
@@ -182,4 +191,31 @@ $flaticon-map: (
 }
 .flaticon-cancel-1:before {
     content: map-get($flaticon-map, "cancel-1");
+}
+.flaticon-statistics:before {
+    content: map-get($flaticon-map, "statistics");
+}
+.flaticon-energy-saving:before {
+    content: map-get($flaticon-map, "energy-saving");
+}
+.flaticon-insurance:before {
+    content: map-get($flaticon-map, "insurance");
+}
+.flaticon-worker:before {
+    content: map-get($flaticon-map, "worker");
+}
+.flaticon-briefcase:before {
+    content: map-get($flaticon-map, "briefcase");
+}
+.flaticon-briefcase-1:before {
+    content: map-get($flaticon-map, "briefcase-1");
+}
+.flaticon-target:before {
+    content: map-get($flaticon-map, "target");
+}
+.flaticon-binoculars:before {
+    content: map-get($flaticon-map, "binoculars");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
 }
