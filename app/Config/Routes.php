@@ -36,7 +36,10 @@ $webRoute['about'] = 'MainController::about';
 
 //=================ADMIN ROUTES====================
 
-$webRoute['captain'] = 'AdminController::index';
+$webRoute['login'] = 'Auth::login';
+$webRoute['register'] = 'Auth::register';
+$webRoute['blogs'] = 'BlogController::index';
+$webRoute['publications'] = 'PublicationsController::index';
 
 $routes->map($webRoute);
 
