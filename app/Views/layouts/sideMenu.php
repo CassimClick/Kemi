@@ -1,8 +1,8 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?= base_url() ?>/directorDashboard" class="brand-link">
+    <a href="<?=base_url()?>/directorDashboard" class="brand-link">
 
-        <span class="brand-text font-weight-bold ml-3"> TSPS</span>
+        <span class="brand-text font-weight-bold ml-3"> Kemi Advocates</span>
     </a>
 
     <!-- Sidebar -->
@@ -17,7 +17,7 @@
                 <!-- entire link open -->
 
                 <li class="nav-item">
-                    <a href="<?= base_url() ?>/dashBoard" class="nav-link ">
+                    <a href="<?=base_url()?>/dashBoard" class="nav-link ">
                         <i class="fas fa-tachometer-alt nav-icon"></i>
                         <!-- <ion-icon class="nav-icon" name="speedometer-outline"></ion-icon> -->
                         <p>
@@ -25,25 +25,13 @@
 
                         </p>
                     </a>
-                    </>
+
                 <li class="nav-item">
-                    <a href="<?= base_url() ?>/galleryAdmin" class="nav-link ">
-                        <i class="fas fa-image nav-icon"></i>
+                    <a href="<?=base_url()?>/law/blog" class="nav-link ">
+                        <i class="fas fa-newspaper nav-icon"></i>
                         <!-- <ion-icon class="nav-icon" name="speedometer-outline"></ion-icon> -->
                         <p>
-                            Gallery
-
-                        </p>
-                    </a>
-
-
-                </li>
-                <li class="nav-item">
-                    <a href="<?= base_url() ?>/announcements" class="nav-link ">
-                        <i class="fas fa-bullhorn nav-icon"></i>
-                        <!-- <ion-icon class="nav-icon" name="speedometer-outline"></ion-icon> -->
-                        <p>
-                            Announcements
+                            Blog Posts
 
                         </p>
                     </a>
@@ -51,53 +39,20 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url()?>/events" class="nav-link ">
-                        <i class="fas fa-star nav-icon"></i>
+                    <a href="<?=base_url()?>/law/publications" class="nav-link ">
+                        <i class="fas fa-file nav-icon"></i>
                         <!-- <ion-icon class="nav-icon" name="speedometer-outline"></ion-icon> -->
                         <p>
-                            Events
+                            Publications
 
                         </p>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a href="<?=base_url()?>/viewFeedback" class="nav-link ">
-                        <i class="fas fa-user nav-icon"></i>
-                        <!-- <ion-icon class="nav-icon" name="speedometer-outline"></ion-icon> -->
-                        <p>
-                            Feedback
 
-                        </p>
-                    </a>
+
                 </li>
 
 
-                <li class="nav-item ">
-                    <a href="<?=base_url()?>/publishResult" class="nav-link ">
-                        <i class="fas fa-file-alt nav-icon"></i>
-                        <p>
-                            Results
-                            <!-- <i class="right fas fa-angle-left"></i> -->
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a href="<?=base_url()?>/joining" class="nav-link ">
-                        <i class="fas fa-file-pdf nav-icon"></i>
-                        <p>
-                            Joining Instructions
-                            <!-- <i class="right fas fa-angle-left"></i> -->
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a href="<?=base_url()?>/fileUpload" class="nav-link ">
-                        <i class="fas fa-upload nav-icon"></i>
-                        <p>
-                            Files Upload
-                            <!-- <i class="right fas fa-angle-left"></i> -->
-                        </p>
-                    </a>
+
                 </li>
 
         </nav>

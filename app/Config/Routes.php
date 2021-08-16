@@ -34,6 +34,10 @@ $webRoute = [];
 $webRoute['/'] = 'MainController::index';
 $webRoute['about'] = 'MainController::about';
 
+//=================ADMIN ROUTES====================
+
+$webRoute['captain'] = 'AdminController::index';
+
 $routes->map($webRoute);
 
 /**
