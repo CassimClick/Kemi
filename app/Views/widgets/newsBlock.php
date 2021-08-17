@@ -1,23 +1,25 @@
 	<!-- News Block -->
-	<div class="newsBlock">
-	    <div class="image">
- <img src="assets/images/slider/business.jpg" alt="">
-	        <div class="ribbon">
-	            <div class="calender">
-	                <span class="flaticon-calendar"></span>
-	                12 Jan,2021
-	            </div>
-	            <div class="category">
-	                <div class="cat">Business</div>
+	<div class="col-lg-4 col-md-6 col-sm-12 case-block">
+	    <div class="case-block-two wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+	        <div class="inner-box">
+	            <figure class="image-box">
+	                <img src="assets/images/law.jpg" alt="">
+	                <div class="link"><a href="case-details.html"><i class="flaticon-link"></i></a></div>
+	                <div class="overlay-layer"></div>
+	            </figure>
+	            <div class="lower-content">
+	                <div class="box">
+	                    <div class="icon-box"><i class="flaticon-calendar"></i></div>
+	                    <p><b>20 Apr,2021</b></p>
+	                    <h4><a href="case-details.html">Business Litigation</a></h4>
+	                </div>
+	                <div class="text">
+	                    <p>Equal blame belongs too those who fail in their through weakness.</p>
+	                </div>
+	                <div class="link"><a href="case-details.html"><i class="flaticon-right"></i>Read More</a>
+	                </div>
 	            </div>
 	        </div>
-	    </div>
-
-	    <div class="details">
-
-	        <a href="" class="title">Hello World</a>
-	        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-	        <a href="" class="news-all">Read More <span class="flaticon-right"></span></a>
 	    </div>
 	</div>
 

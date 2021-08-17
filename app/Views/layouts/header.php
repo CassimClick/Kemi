@@ -68,28 +68,29 @@
                                     </li>
                                     <li class="dropdown"><a href="#">Practice Areas</a>
                                         <ul>
-                                            <li><a href="<?=base_url()?>/realEstate">Real Estate</a></li>
-                                            <li><a href="case-2.html">Corporate Law</a></li>
-                                            <li><a href="case-3.html">Tax Law</a></li>
-                                            <li><a href="case-details.html">Banking & Finance</a></li>
-                                            <li><a href="case-details.html">Litigation & ADR</a></li>
-                                            <li><a href="case-details.html">Competition Law</a></li>
-                                            <li><a href="case-details.html">Shipping & Trade Law</a></li>
-                                            <li><a href="case-details.html">Private Client Service</a></li>
-                                            <li><a href="case-details.html">Energy, Oil, Gas & Mining</a></li>
-                                            <li><a href="case-details.html">Employment Labour</a></li>
-                                            <li><a href="case-details.html">Non Profit NGO</a></li>
+                                            <li><a href="<?=base_url()?>/law/realEstate">Real Estate</a></li>
+                                            <li><a href="<?=base_url()?>/law/corporate">Corporate Law</a></li>
+                                            <li><a href="<?=base_url()?>/law/tax">Tax Law</a></li>
+                                            <li><a href="<?=base_url()?>/law/finance">Banking & Finance</a></li>
+                                            <li><a href="<?=base_url()?>/law/litigation">Litigation & ADR</a></li>
+                                            <li><a href="<?=base_url()?>/law/competition">Competition Law</a></li>
+                                            <li><a href="<?=base_url()?>/law/shipping">Shipping & Trade Law</a></li>
+                                            <li><a href="<?=base_url()?>/law/privateClient">Private Client Service</a>
+                                            </li>
+                                            <li><a href="<?=base_url()?>/law/energy">Energy, Oil, Gas & Mining</a></li>
+                                            <li><a href="<?=base_url()?>/law/employment">Employment Labour</a></li>
+                                            <li><a href="<?=base_url()?>/law/ngo">Non Profit NGO</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Insight</a>
                                         <ul>
-                                            <li><a href="<?=base_url()?>/news">News</a></li>
-                                            <li><a href="<?=base_url()?>/publications">Publications</a></li>
+                                            <li><a href="<?=base_url()?>/law/news">News</a></li>
+                                            <li><a href="<?=base_url()?>/law/publications">Publications</a></li>
 
                                         </ul>
                                     </li>
 
-                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="<?=base_url()?>/law/contact">Contact us</a></li>
                                 </ul>
                             </div>
                         </nav>
