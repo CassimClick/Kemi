@@ -34,13 +34,16 @@ $webRoute = [];
 $webRoute['/'] = 'MainController::index';
 $webRoute['about'] = 'MainController::about';
 $webRoute['news'] = 'MainController::news';
+$webRoute['newsDetails'] = 'MainController::newsDetails';
+$webRoute['publications'] = 'MainController::publications';
+$webRoute['publicationDetails'] = 'MainController::publicationDetails';
 
 //=================ADMIN ROUTES====================
 
 $webRoute['login'] = 'Auth::login';
 $webRoute['register'] = 'Auth::register';
 $webRoute['blogs'] = 'BlogController::index';
-$webRoute['publications'] = 'PublicationsController::index';
+$webRoute['articles'] = 'ArticlesController::index';
 
 $routes->map($webRoute);
 

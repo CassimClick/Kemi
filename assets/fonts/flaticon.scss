@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?8e179cc548db067c73f9ec1ee28c5aad") format("truetype"),
-url("./flaticon.woff?8e179cc548db067c73f9ec1ee28c5aad") format("woff"),
-url("./flaticon.woff2?8e179cc548db067c73f9ec1ee28c5aad") format("woff2"),
-url("./flaticon.eot?8e179cc548db067c73f9ec1ee28c5aad#iefix") format("embedded-opentype"),
-url("./flaticon.svg?8e179cc548db067c73f9ec1ee28c5aad#flaticon") format("svg");
+    src: url("./flaticon.ttf?e2a72eb4a8665deab17c4c3354906202") format("truetype"),
+url("./flaticon.woff?e2a72eb4a8665deab17c4c3354906202") format("woff"),
+url("./flaticon.woff2?e2a72eb4a8665deab17c4c3354906202") format("woff2"),
+url("./flaticon.eot?e2a72eb4a8665deab17c4c3354906202#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e2a72eb4a8665deab17c4c3354906202#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -70,6 +70,9 @@ $flaticon-map: (
     "target": "\f12f",
     "binoculars": "\f130",
     "eye": "\f131",
+    "print": "\f132",
+    "download-1": "\f133",
+    "file-1": "\f134",
 );
 
 .flaticon-money:before {
@@ -218,4 +221,13 @@ $flaticon-map: (
 }
 .flaticon-eye:before {
     content: map-get($flaticon-map, "eye");
+}
+.flaticon-print:before {
+    content: map-get($flaticon-map, "print");
+}
+.flaticon-download-1:before {
+    content: map-get($flaticon-map, "download-1");
+}
+.flaticon-file-1:before {
+    content: map-get($flaticon-map, "file-1");
 }

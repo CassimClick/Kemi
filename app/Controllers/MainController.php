@@ -16,12 +16,33 @@ class MainController extends BaseController
 
         return view('pages/about', $data);
     }
-    //=================About Page====================
+    //=================News Page====================
     public function news()
     {
         $data['title'] = 'Kemi Advocates | News';
 
         return view('pages/allNews', $data);
+    }
+    //=================News Details====================
+    public function newsDetails()
+    {
+        $data['title'] = 'Kemi Advocates | News';
+
+        return view('pages/newsDetails', $data);
+    }
+    //=================publications page====================
+    public function publications()
+    {
+        $data['title'] = 'Kemi Advocates | Publications';
+
+        return view('pages/publications', $data);
+    }
+    //=================publications details====================
+    public function publicationDetails()
+    {
+        $data['title'] = 'Kemi Advocates | Publications';
+
+        return view('pages/publicationDetails', $data);
     }
 
 }

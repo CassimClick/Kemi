@@ -43,8 +43,9 @@
                             <li>Pension funds and any other institution</li>
                         </ul>
                         <div class="btns-box">
-                            <a href="<?=base_url()?>/contact" class="theme-btn btn-style-two"><span class="txt">Get a
-                                    quote <span class="arrow flaticon-right"></span></span></a>
+                            <a href="<?=base_url()?>/contact" class="theme-btn btn-style-two"><span class="txt">Firm
+                                    Profile
+                                    <span class="arrow flaticon-download"></span></span></a>
                             <a href="<?=base_url()?>/about" class="theme-btn btn-style-three"><span class="txt">Read
                                     more <span class="arrow flaticon-right"></span></span></a>
                         </div>

@@ -165,3 +165,12 @@ url("../fonts/flaticon.svg") format("svg");
 .flaticon-eye:before {
     content: "\f131";
 }
+.flaticon-print:before {
+    content: "\f132";
+}
+.flaticon-download-1:before {
+    content: "\f133";
+}
+.flaticon-file-1:before {
+    content: "\f134";
+}
