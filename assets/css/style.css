@@ -1401,7 +1401,7 @@ img{
 .banner-section .content-column .title{
 	position:relative;
 	color:var(--primaryColor);
-	font-size:25px;
+	font-size:22px;
 	line-height:1.8em;
 	margin-bottom:22px;
 	font-weight:400;
@@ -1453,7 +1453,7 @@ img{
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
 	font-family: var(--bellefair);
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 .banner-section .active .content-column h1{

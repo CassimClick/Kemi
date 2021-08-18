@@ -16,6 +16,13 @@ class MainController extends BaseController
 
         return view('pages/about', $data);
     }
+    //=================contact Page====================
+    public function contact()
+    {
+        $data['title'] = 'Contact Us';
+
+        return view('pages/contact', $data);
+    }
     //=================News Page====================
     public function news()
     {

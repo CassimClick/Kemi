@@ -19,10 +19,10 @@
                         <div class="text">The Firm completes its corporate and commercial practice with advice on
                             potential tax implications on the structuring and implementation of various transactions.
                         </div>
-                        <div class="btns-box">
+                        <!-- <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
                                     <span class="arrow flaticon-right"></i></span></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -40,10 +40,10 @@
                         <div class="text">We have considerable experience in the sale and purchase of residential and
                             commercial properties and liaising with relevant institutions/individuals for financing such
                             sales</div>
-                        <div class="btns-box">
+                        <!-- <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
                                     <span class="arrow flaticon-right"></i></span></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -62,10 +62,10 @@
                             institutions and specific clients. We act on their behalf in connection with their
                             implementation of banking securities perfection (mortgages, liens) and project finance loan
                             agreements and securities.</div>
-                        <div class="btns-box">
+                        <!-- <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
                                     <span class="arrow flaticon-right"></i></span></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -82,10 +82,10 @@
                         <div class="text">Kemi Advocates can facilitate our clients in energy, oil, gas and mining to
                             structure projects, acquire finance and implement projects and manage their investments
                             since we have the aforesaid expertise</div>
-                        <div class="btns-box">
+                        <!-- <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
                                     <span class="arrow flaticon-right"></i></span></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -102,10 +102,10 @@
                         <div class="text">Our Litigation and Alternative Dispute Resolution (ADR) team provides
                             competent Litigation services for our clients. Specifically, we are experienced on
                             Commercial Litigation, Corporate Law Issues.</div>
-                        <div class="btns-box">
+                        <!-- <div class="btns-box">
                             <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Get Consultation
                                     <span class="flaticon flaticon-right"></span></span></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 

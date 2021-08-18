@@ -33,6 +33,7 @@ $webRoute = [];
 
 $webRoute['/'] = 'MainController::index';
 $webRoute['about'] = 'MainController::about';
+$webRoute['contact'] = 'MainController::contact';
 $webRoute['news'] = 'MainController::news';
 $webRoute['newsDetails'] = 'MainController::newsDetails';
 $webRoute['publications'] = 'MainController::publications';

@@ -32,11 +32,11 @@
                             <div class="footer-widget links-widget">
                                 <h5>Useful links</h5>
                                 <ul class="footer-list">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="<?=base_url()?>/law/">Home</a></li>
+                                    <li><a href="<?=base_url()?>/law/abut">About Us</a></li>
+                                    <li><a href="<?=base_url()?>/law/news">News</a></li>
+                                    <li><a href="<?=base_url()?>/law/publications">Publications</a></li>
+                                    <li><a href="<?=base_url()?>/law/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -54,20 +54,17 @@
                                 <h5>Office Info</h5>
                                 <ul>
                                     <li>
-                                        <span class="icon flaticon-call-1"></span>
-                                        <a href="tel:+61-3-8376-6284">+61 3 8376 6284</a>
+                                        <span class="icon flaticon-call"></span>
+                                        <a href="+255 766 336 936">+255 766 336 936</a>
+                                    </li>
+
+                                    <li>
+                                        <span class="icon flaticon-mail"></span>
+                                        <a href="info@kemiadvocates.co.tz">info@kemiadvocates.co.tz</a>
                                     </li>
                                     <li>
-                                        <span class="icon flaticon-call-1"></span>
-                                        <a href="tel:+00-9-0000-9999">+00 9 0000 9999</a>
-                                    </li>
-                                    <li>
-                                        <span class="icon flaticon-email-2"></span>
-                                        <a href="mailto:Info@counsellawfirm.com">Info@counsellawfirm.com</a>
-                                    </li>
-                                    <li>
-                                        <span class="icon flaticon-maps-and-flags"></span>
-                                        21 King Street Melbourne, <br> 3000, Australia
+                                        <span class="icon flaticon-pin"></span>
+                                        NSSF Mafao House, 6th Floor, Old Moshi Arusha Rd
                                     </li>
                                 </ul>
                             </div>
@@ -77,7 +74,7 @@
                         <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                             <div class="footer-widget newsletter-widget">
                                 <h5>Subscribe Now</h5>
-                                <div class="text">Quis autem vel eum iure reprehenderit aui ea voluptate.</div>
+                                <div class="text">Subscribe To Our NewsLater.</div>
                                 <div class="newsletter-form">
                                     <form method="post" action="contact.html">
                                         <div class="form-group">
