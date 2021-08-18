@@ -134,8 +134,8 @@ p{
 	font-size:54px;
 	margin-bottom: 10px;
 }
-.values,.about,.team{
-	padding: 2rem 0;
+.values,.about,.team,.services-block{
+	padding: 2.2rem 0;
 }
 
 /* Typography */

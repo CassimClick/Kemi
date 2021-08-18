@@ -45,4 +45,14 @@ class MainController extends BaseController
         return view('pages/publicationDetails', $data);
     }
 
+    //=================INNER PAGES====================
+
+    //=================corporate ====================
+    public function corporate()
+    {
+        $data['title'] = 'Kemi Advocates | Corporate Law';
+
+        return view('pages/corporate', $data);
+    }
+
 }

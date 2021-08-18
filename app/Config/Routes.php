@@ -37,6 +37,7 @@ $webRoute['news'] = 'MainController::news';
 $webRoute['newsDetails'] = 'MainController::newsDetails';
 $webRoute['publications'] = 'MainController::publications';
 $webRoute['publicationDetails'] = 'MainController::publicationDetails';
+$webRoute['corporate'] = 'MainController::corporate';
 
 //=================ADMIN ROUTES====================
 
