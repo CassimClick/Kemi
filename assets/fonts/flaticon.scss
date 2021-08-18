@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?e2a72eb4a8665deab17c4c3354906202") format("truetype"),
-url("./flaticon.woff?e2a72eb4a8665deab17c4c3354906202") format("woff"),
-url("./flaticon.woff2?e2a72eb4a8665deab17c4c3354906202") format("woff2"),
-url("./flaticon.eot?e2a72eb4a8665deab17c4c3354906202#iefix") format("embedded-opentype"),
-url("./flaticon.svg?e2a72eb4a8665deab17c4c3354906202#flaticon") format("svg");
+    src: url("./flaticon.ttf?65cf8f0bfd479be399a4b5d325bd2d1a") format("truetype"),
+url("./flaticon.woff?65cf8f0bfd479be399a4b5d325bd2d1a") format("woff"),
+url("./flaticon.woff2?65cf8f0bfd479be399a4b5d325bd2d1a") format("woff2"),
+url("./flaticon.eot?65cf8f0bfd479be399a4b5d325bd2d1a#iefix") format("embedded-opentype"),
+url("./flaticon.svg?65cf8f0bfd479be399a4b5d325bd2d1a#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -73,6 +73,9 @@ $flaticon-map: (
     "print": "\f132",
     "download-1": "\f133",
     "file-1": "\f134",
+    "landscape": "\f135",
+    "mountain": "\f136",
+    "land": "\f137",
 );
 
 .flaticon-money:before {
@@ -230,4 +233,13 @@ $flaticon-map: (
 }
 .flaticon-file-1:before {
     content: map-get($flaticon-map, "file-1");
+}
+.flaticon-landscape:before {
+    content: map-get($flaticon-map, "landscape");
+}
+.flaticon-mountain:before {
+    content: map-get($flaticon-map, "mountain");
+}
+.flaticon-land:before {
+    content: map-get($flaticon-map, "land");
 }

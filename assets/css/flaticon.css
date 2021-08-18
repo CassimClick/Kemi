@@ -17,7 +17,6 @@ url("../fonts/flaticon.svg") format("svg");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .flaticon-money:before {
     content: "\f101";
 }
@@ -173,4 +172,13 @@ url("../fonts/flaticon.svg") format("svg");
 }
 .flaticon-file-1:before {
     content: "\f134";
+}
+.flaticon-landscape:before {
+    content: "\f135";
+}
+.flaticon-mountain:before {
+    content: "\f136";
+}
+.flaticon-land:before {
+    content: "\f137";
 }

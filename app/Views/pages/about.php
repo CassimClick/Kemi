@@ -122,7 +122,7 @@
                         innovate new techniques, applications and approaches to continuously improve our service
                         delivery to our clients. We think outside the box and develop ingenious ways of serving our
                         clients and delivering value</div>
-                    <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
+                    <a class="arrow flaticon-right-arrow-3" href="#"></a>
                 </div>
             </div>
 
@@ -137,7 +137,7 @@
                         it is vital to build trust with our clients. We strive to be transparent, fair and ethical in
                         everything we do and in all our transactions with clients, investors and co-workers.
                     </div>
-                    <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
+                    <a class="arrow flaticon-right-arrow-3" href="#"></a>
                 </div>
             </div>
 
@@ -151,7 +151,7 @@
                         and personal standards in carrying out our duties and serving our clients. We conduct ourselves
                         with dignity, and our professional expertise and attitude is evident in the quality of tasks and
                         interactions with our clients</div>
-                    <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
+                    <a class="arrow flaticon-right-arrow-3" href="#"></a>
                 </div>
             </div>
 
@@ -159,77 +159,5 @@
     </div>
 </section>
 <!-- End Services Section Two -->
-<!-- Team Section -->
-<section class="team" style="background:#F8F8F8">
-    <div class="auto-container">
-        <!-- Sec Title -->
-        <div class="sec-title centered">
-            <h2>Our Professional Team</h2>
-        </div>
-        <div class="row clearfix">
-
-            <!-- Team Block -->
-            <div class="team-block col-lg-3 col-md-6 col-sm-12">
-                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"
-                    style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
-                    <div class="image">
-                        <img src="assets/images/resource/team-1.jpg" alt="" />
-                    </div>
-                    <div class="lower-box">
-                        <h5><a href="corporate_law.html">Chris JAriko</a></h5>
-                        <div class="designation">Founder and Ceo</div>
-                        <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Block -->
-            <div class="team-block col-lg-3 col-md-6 col-sm-12">
-                <div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms"
-                    style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
-                    <div class="image">
-                        <img src="assets/images/resource/team-2.jpg" alt="" />
-                    </div>
-                    <div class="lower-box">
-                        <h5><a href="corporate_law.html">ALina Kevin</a></h5>
-                        <div class="designation">Senior Attorney</div>
-                        <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Block -->
-            <div class="team-block col-lg-3 col-md-6 col-sm-12">
-                <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms"
-                    style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
-                    <div class="image">
-                        <img src="assets/images/resource/team-3.jpg" alt="" />
-                    </div>
-                    <div class="lower-box">
-                        <h5><a href="corporate_law.html">Senior Attorney</a></h5>
-                        <div class="designation">Junior Attorney</div>
-                        <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Block -->
-            <div class="team-block col-lg-3 col-md-6 col-sm-12">
-                <div class="inner-box wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms"
-                    style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
-                    <div class="image">
-                        <img src="assets/images/resource/team-4.jpg" alt="" />
-                    </div>
-                    <div class="lower-box">
-                        <h5><a href="corporate_law.html">Polard Andrew</a></h5>
-                        <div class="designation">Financial Attorney</div>
-                        <a class="arrow flaticon-right-arrow-3" href="corporate_law.html"></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- End Team Section -->
+<?=$this->include('components/team')?>
 <?=$this->endSection();

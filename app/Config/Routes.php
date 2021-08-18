@@ -37,7 +37,19 @@ $webRoute['news'] = 'MainController::news';
 $webRoute['newsDetails'] = 'MainController::newsDetails';
 $webRoute['publications'] = 'MainController::publications';
 $webRoute['publicationDetails'] = 'MainController::publicationDetails';
+//=====================================
 $webRoute['corporate'] = 'MainController::corporate';
+$webRoute['realEstate'] = 'MainController::realEstate';
+$webRoute['ngo'] = 'MainController::ngo';
+$webRoute['tax'] = 'MainController::tax';
+$webRoute['employment'] = 'MainController::employment';
+$webRoute['banking'] = 'MainController::banking';
+$webRoute['competition'] = 'MainController::competition';
+$webRoute['litigation'] = 'MainController::litigation';
+$webRoute['energy'] = 'MainController::energy';
+$webRoute['privateClient'] = 'MainController::privateClient';
+$webRoute['shipping'] = 'MainController::shipping';
+$webRoute['realEstate'] = 'MainController::realEstate';
 
 //=================ADMIN ROUTES====================
 

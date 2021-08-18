@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title><?=$title?></title>
+    <title>Kemi Advocates | <?=$title?></title>
     <!-- Stylesheets -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -38,7 +38,8 @@
                 <div class="auto-container clearfix">
 
                     <div class="pull-left logo-box">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a>
+                        <div class="logo"><a href="<?=base_url()?>/law"><img src="assets/images/logo.png" alt=""
+                                    title="Kemi Advocates"></a>
                         </div>
                     </div>
 
