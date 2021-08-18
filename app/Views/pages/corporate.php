@@ -1,7 +1,7 @@
 <?=$this->extend('layouts/mainLayout');?>
 <?=$this->section('content');?>
 <!-- Page Title -->
-<section class="page-title style-two" style="background:url(assets/images/write.jpg) no-repeat center/cover">
+<section class="page-title style-two" style="background:url(assets/images/slider/corparate.jpg) no-repeat center/cover">
     <div class="auto-container">
         <h1>Corporate and Commercial</h1>
         <ul class="page-breadcrumb">

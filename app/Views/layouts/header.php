@@ -72,7 +72,7 @@
                                             <li><a href="<?=base_url()?>/law/realEstate">Real Estate</a></li>
                                             <li><a href="<?=base_url()?>/law/corporate">Corporate Law</a></li>
                                             <li><a href="<?=base_url()?>/law/tax">Tax Law</a></li>
-                                            <li><a href="<?=base_url()?>/law/finance">Banking & Finance</a></li>
+                                            <li><a href="<?=base_url()?>/law/banking">Banking & Finance</a></li>
                                             <li><a href="<?=base_url()?>/law/litigation">Litigation & ADR</a></li>
                                             <li><a href="<?=base_url()?>/law/competition">Competition Law</a></li>
                                             <li><a href="<?=base_url()?>/law/shipping">Shipping & Trade Law</a></li>
