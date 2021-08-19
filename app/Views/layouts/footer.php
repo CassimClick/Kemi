@@ -32,11 +32,11 @@
                             <div class="footer-widget links-widget">
                                 <h5>Useful links</h5>
                                 <ul class="footer-list">
-                                    <li><a href="<?=base_url()?>/law/">Home</a></li>
-                                    <li><a href="<?=base_url()?>/law/abut">About Us</a></li>
-                                    <li><a href="<?=base_url()?>/law/news">News</a></li>
-                                    <li><a href="<?=base_url()?>/law/publications">Publications</a></li>
-                                    <li><a href="<?=base_url()?>/law/contact">Contact Us</a></li>
+                                    <li><a href="<?=base_url()?>/">Home</a></li>
+                                    <li><a href="<?=base_url()?>/abut">About Us</a></li>
+                                    <li><a href="<?=base_url()?>/news">News</a></li>
+                                    <li><a href="<?=base_url()?>/publications">Publications</a></li>
+                                    <li><a href="<?=base_url()?>/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>

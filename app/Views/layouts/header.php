@@ -38,7 +38,7 @@
                 <div class="auto-container clearfix">
 
                     <div class="pull-left logo-box">
-                        <div class="logo"><a href="<?=base_url()?>/law"><img src="assets/images/logo.png" alt=""
+                        <div class="logo"><a href="<?=base_url()?>"><img src="assets/images/logo.png" alt=""
                                     title="Kemi Advocates"></a>
                         </div>
                     </div>
@@ -61,37 +61,37 @@
 
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current"><a href="<?=base_url()?>/law">Home</a>
+                                    <li class="current"><a href="<?=base_url()?>">Home</a>
 
                                     </li>
-                                    <li class=""><a href="<?=base_url()?>/law/about">About</a>
+                                    <li class=""><a href="<?=base_url()?>/about">About</a>
 
                                     </li>
                                     <li class="dropdown"><a href="#">Practice Areas</a>
                                         <ul>
-                                            <li><a href="<?=base_url()?>/law/realEstate">Real Estate</a></li>
-                                            <li><a href="<?=base_url()?>/law/corporate">Corporate Law</a></li>
-                                            <li><a href="<?=base_url()?>/law/tax">Tax Law</a></li>
-                                            <li><a href="<?=base_url()?>/law/banking">Banking & Finance</a></li>
-                                            <li><a href="<?=base_url()?>/law/litigation">Litigation & ADR</a></li>
-                                            <li><a href="<?=base_url()?>/law/competition">Competition Law</a></li>
-                                            <li><a href="<?=base_url()?>/law/shipping">Shipping & Trade Law</a></li>
-                                            <li><a href="<?=base_url()?>/law/privateClient">Private Client Service</a>
+                                            <li><a href="<?=base_url()?>/realEstate">Real Estate</a></li>
+                                            <li><a href="<?=base_url()?>/corporate">Corporate Law</a></li>
+                                            <li><a href="<?=base_url()?>/tax">Tax Law</a></li>
+                                            <li><a href="<?=base_url()?>/banking">Banking & Finance</a></li>
+                                            <li><a href="<?=base_url()?>/litigation">Litigation & ADR</a></li>
+                                            <li><a href="<?=base_url()?>/competition">Competition Law</a></li>
+                                            <li><a href="<?=base_url()?>/shipping">Shipping & Trade Law</a></li>
+                                            <li><a href="<?=base_url()?>/privateClient">Private Client Service</a>
                                             </li>
-                                            <li><a href="<?=base_url()?>/law/energy">Energy, Oil, Gas & Mining</a></li>
-                                            <li><a href="<?=base_url()?>/law/employment">Employment Labour</a></li>
-                                            <li><a href="<?=base_url()?>/law/ngo">Non Profit NGO</a></li>
+                                            <li><a href="<?=base_url()?>/energy">Energy, Oil, Gas & Mining</a></li>
+                                            <li><a href="<?=base_url()?>/employment">Employment Labour</a></li>
+                                            <li><a href="<?=base_url()?>/ngo">Non Profit NGO</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Insight</a>
                                         <ul>
-                                            <li><a href="<?=base_url()?>/law/news">News</a></li>
-                                            <li><a href="<?=base_url()?>/law/publications">Publications</a></li>
+                                            <li><a href="<?=base_url()?>/news">News</a></li>
+                                            <li><a href="<?=base_url()?>/publications">Publications</a></li>
 
                                         </ul>
                                     </li>
 
-                                    <li><a href="<?=base_url()?>/law/contact">Contact us</a></li>
+                                    <li><a href="<?=base_url()?>/contact">Contact us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -126,7 +126,7 @@
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="index.html" title=""><img src="assets/images/logo-small.png" alt="" title=""></a>
+                        <a href="<?=base_url()?>" title=""><img src="assets/images/logo-small.png" alt="" title=""></a>
                     </div>
                     <!--Right Col-->
                     <div class="pull-right">
