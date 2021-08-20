@@ -1,17 +1,22 @@
 <?php namespace App\Controllers;
 
+use App\Libraries\CommonTasks;
 use App\Models\BlogModel;
 
 class BlogController extends BaseController
 {
-    public $BlogModel;
+    public $blogModel;
     public $session;
+    public $commonTask;
 
     public function __construct()
     {
-        $this->BlogModel = new BlogModel();
+        $this->blogModel = new BlogModel();
+        $this->commonTask = new CommonTasks();
+
         helper('date');
         $this->session = session();
+        helper(['form']);
     }
 
     public function index()
@@ -24,9 +29,9 @@ class BlogController extends BaseController
             'heading' => 'blogs',
         ];
 
-        $data['blogs'] = $this->BlogModel->getAllBlogs();
+        $data['blogs'] = $this->blogModel->getAllBlogs();
 
-        return view('Admin/blogs', $data);
+        return view('admin/blog', $data);
     }
 //=================Publishing new blog====================
     public function publishBlog()
@@ -35,23 +40,74 @@ class BlogController extends BaseController
             return redirect()->route('login');
         }
         if ($this->request->getMethod() == 'post') {
+            $file = $this->request->getFile('image-file');
+            $blogId = md5(str_shuffle('abcdefghijklm567820341yriABXIENCOE'));
 
-            $blog = [
-                'title' => $this->request->getVar('title'),
-                'date' => $this->request->getVar('date'),
-                'description' => $this->request->getVar('description'),
-            ];
+            if ('' == $file) {
+                $blog = [
+                    'title' => $this->request->getVar('title'),
+                    'blog_id' => $blogId,
 
-            //echo json_encode($blog);
-            $request = $this->BlogModel->saveData($blog);
+                    'description' => $this->request->getVar('description'),
+                    'image_url' => '',
+                ];
 
-            if ($request) {
-                echo json_encode('blog Published');
+                $request = $this->blogModel->saveData($blog);
+
+                if ($request) {
+                    echo ('blog Published');
+                } else {
+                    echo ('Something Went Wrong');
+                }
             } else {
-                echo json_encode('Something Went Wrong');
+                $blog = [
+                    'title' => $this->request->getVar('title'),
+                    'blog_id' => $blogId,
+                    'description' => $this->request->getVar('description'),
+                    'image_url' => $this->commonTask->processFile($file),
+                ];
+
+                $request = $this->blogModel->saveData($blog);
+
+                if ($request) {
+                    echo ('blog Published');
+                } else {
+                    echo ('Something Went Wrong');
+                }
+
             }
 
         }
+        return redirect()->to('blog');
+        //return view('Admin/blogs');
+    }
+    //=================All blogs====================
+    public function allBlogs()
+    {
+        if (!$this->session->has('loggedUser')) {
+            return redirect()->route('login');
+        }
+        $data['page'] = [
+            'title' => 'All blogs',
+            'heading' => ' All blogs',
+        ];
+        //$data['xxx'] = [3,69,6696,56];
+
+        $data['allBlogs'] = $this->blogModel->getAllBlogs();
+
+        return view('Pages/allBlogs', $data);
+    }
+//=================get a single blog blogs====================
+    public function singleBlog($id)
+    {
+        $data['page'] = [
+            'title' => 'blog',
+            'heading' => 'blog',
+        ];
+
+        $data['theBlog'] = $this->blogModel->getSingleBlog($id);
+
+        return view('pages/singleBlog', $data);
     }
     //=================Update existing blog====================
     public function updateBlog()
@@ -68,7 +124,7 @@ class BlogController extends BaseController
             ];
 
             //echo json_encode($blog);
-            $request = $this->BlogModel->updateBlog($theId, $blog);
+            $request = $this->blogModel->updateBlog($theId, $blog);
 
             if ($request) {
                 echo json_encode('blog Updated');
@@ -86,7 +142,7 @@ class BlogController extends BaseController
         }
         if ($this->request->getMethod() == 'post') {
             $blogId = $this->request->getVar('id');
-            $result = $this->BlogModel->singleBlog($blogId);
+            $result = $this->blogModel->singleBlog($blogId);
 
             echo json_encode($result);
 
@@ -99,23 +155,11 @@ class BlogController extends BaseController
         }
         if ($this->request->getMethod() == 'post') {
             $blogId = $this->request->getVar('id');
-            $result = $this->BlogModel->deleteBlog($blogId);
+            $result = $this->blogModel->deleteBlog($blogId);
 
             echo json_encode('blog Deleted...');
 
         }
-    }
-
-    public function events()
-    {
-        if (!$this->session->has('loggedUser')) {
-            return redirect()->route('login');
-        }
-        $data['page'] = [
-            'title' => 'Events',
-            'heading' => 'Events',
-        ];
-        return view('Admin/events', $data);
     }
 
 }

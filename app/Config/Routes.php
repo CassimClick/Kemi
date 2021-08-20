@@ -58,6 +58,7 @@ $webRoute['login'] = 'Auth::login';
 $webRoute['dashBoard'] = 'AdminController::dashBoard';
 $webRoute['register'] = 'Auth::register';
 $webRoute['blog'] = 'BlogController::index';
+$webRoute['publishBlog'] = 'BlogController::publishBlog';
 $webRoute['articles'] = 'ArticlesController::index';
 
 $routes->map($webRoute);

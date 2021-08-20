@@ -27,7 +27,7 @@
                     </a>
 
                 <li class="nav-item">
-                    <a href="<?=base_url()?>/law/blog" class="nav-link ">
+                    <a href="<?=base_url()?>/blog" class="nav-link ">
                         <i class="fas fa-newspaper nav-icon"></i>
                         <!-- <ion-icon class="nav-icon" name="speedometer-outline"></ion-icon> -->
                         <p>
@@ -39,7 +39,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="<?=base_url()?>/law/publications" class="nav-link ">
+                    <a href="<?=base_url()?>/publications" class="nav-link ">
                         <i class="fas fa-file nav-icon"></i>
                         <!-- <ion-icon class="nav-icon" name="speedometer-outline"></ion-icon> -->
                         <p>
