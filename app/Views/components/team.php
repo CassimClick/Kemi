@@ -12,7 +12,7 @@
                 <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"
                     style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
                     <div class="image">
-                        <img src="assets/images/resource/team-1.jpg" alt="" />
+                        <img src="assets/images/esther.png" alt="" />
                     </div>
                     <div class="lower-box">
                         <h5><a href="#">ESTHER MISSO </a></h5>
@@ -27,7 +27,7 @@
                 <div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms"
                     style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
                     <div class="image">
-                        <img src="assets/images/resource/team-2.jpg" alt="" />
+                        <img src="assets/images/kesta.png" alt="" />
                     </div>
                     <div class="lower-box">
                         <h5><a href="#">KESTER LYARUU </a></h5>
@@ -38,7 +38,7 @@
             </div>
 
             <!-- Team Block -->
-            <div class="team-block col-lg-3 col-md-6 col-sm-12">
+            <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms"
                     style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
                     <div class="image">
@@ -50,10 +50,10 @@
                         <a class="arrow flaticon-right-arrow-3" href="#"></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Team Block -->
-            <div class="team-block col-lg-3 col-md-6 col-sm-12">
+            <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms"
                     style="box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;">
                     <div class="image">
@@ -65,7 +65,7 @@
                         <a class="arrow flaticon-right-arrow-3" href="#"></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
