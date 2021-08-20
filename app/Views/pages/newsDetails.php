@@ -6,7 +6,7 @@
     <div class="auto-container">
         <h1>Blog Detail</h1>
         <ul class="page-breadcrumb">
-            <li><a href="index.html">home</a></li>
+            <li><a href="<?=base_url()?>">home</a></li>
             <li>Blog Detail</li>
         </ul>
     </div>

@@ -23,7 +23,7 @@
                     <div class="icon flaticon-smartphone"></div>
                     <h5>Phone</h5>
                     <ul class="info-list">
-                        <li><a href="+255 766 336 936">+255 766 336 936</a></li>
+                        <li><a href="#">+255 766 336 936</a></li>
 
                     </ul>
                 </div>
@@ -35,9 +35,9 @@
                     <div class="icon flaticon-mail"></div>
                     <h5>Email</h5>
                     <ul class="info-list">
-                        <li><a href="info@kemiadvocates.co.tz">info@kemiadvocates.co.tz</a></li>
-                        <li><a href="esther.misso@kemiadvocates.co.tz">esther.misso@kemiadvocates.co.tz</a></li>
-                        <li><a href="kester.lyaruu@kemiadvocates.co.tz">kester.lyaruu@kemiadvocates.co.tz</a></li>
+                        <li><a href="#">info@kemiadvocates.co.tz</a></li>
+                        <li><a href="#">esther.misso@kemiadvocates.co.tz</a></li>
+                        <li><a href="#">kester.lyaruu@kemiadvocates.co.tz</a></li>
                     </ul>
                 </div>
             </div>

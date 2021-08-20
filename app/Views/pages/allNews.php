@@ -5,7 +5,7 @@
     <div class="auto-container">
         <h1>recent news</h1>
         <ul class="page-breadcrumb">
-            <li><a href="<?=base_url()?>/law">home</a></li>
+            <li><a href="<?=base_url()?>">home</a></li>
             <li>Recent news</li>
         </ul>
     </div>

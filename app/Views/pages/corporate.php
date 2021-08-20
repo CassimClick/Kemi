@@ -5,7 +5,7 @@
     <div class="auto-container">
         <h1>Corporate and Commercial</h1>
         <ul class="page-breadcrumb">
-            <li><a href="index.html">home</a></li>
+            <li><a href="<?=base_url()?>">home</a></li>
             <!-- <li>Corporate and Commercial</li> -->
         </ul>
     </div>

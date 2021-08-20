@@ -55,12 +55,12 @@
                                 <ul>
                                     <li>
                                         <span class="icon flaticon-call"></span>
-                                        <a href="+255 766 336 936">+255 766 336 936</a>
+                                        <a href="#">+255 766 336 936</a>
                                     </li>
 
                                     <li>
                                         <span class="icon flaticon-mail"></span>
-                                        <a href="info@kemiadvocates.co.tz">info@kemiadvocates.co.tz</a>
+                                        <a href="#">info@kemiadvocates.co.tz</a>
                                     </li>
                                     <li>
                                         <span class="icon flaticon-pin"></span>
