@@ -55,8 +55,9 @@ $webRoute['realEstate'] = 'MainController::realEstate';
 //=================ADMIN ROUTES====================
 
 $webRoute['login'] = 'Auth::login';
+$webRoute['dashBoard'] = 'AdminController::dashBoard';
 $webRoute['register'] = 'Auth::register';
-$webRoute['blogs'] = 'BlogController::index';
+$webRoute['blog'] = 'BlogController::index';
 $webRoute['articles'] = 'ArticlesController::index';
 
 $routes->map($webRoute);

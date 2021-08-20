@@ -10,11 +10,11 @@ class AdminController extends BaseController
     }
 
     //=================About Page====================
-    public function about()
+    public function dashBoard()
     {
-        $data['title'] = 'Kemi Advocates | About Us';
+        $data['title'] = 'Kemi Advocates | Dashboard';
 
-        return view('pages/about', $data);
+        return view('admin/dashboard', $data);
     }
 
 }

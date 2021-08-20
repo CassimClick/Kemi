@@ -13,18 +13,8 @@ class BlogController extends BaseController
         helper('date');
         $this->session = session();
     }
-    public function dashBoard()
-    {
-        if (!$this->session->has('loggedUser')) {
-            return redirect()->route('login');
-        }
-        $data['page'] = [
-            'title' => 'Admin Dashboard',
-            'heading' => 'Admin Dashboard',
-        ];
-        return view('Admin/admin', $data);
-    }
-    public function blogs()
+
+    public function index()
     {
         if (!$this->session->has('loggedUser')) {
             return redirect()->route('login');

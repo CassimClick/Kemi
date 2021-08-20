@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; <?= date('Y') ?></strong>
+    <strong>Copyright &copy; <?=date('Y')?></strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
         <b>Version</b> 1.0.0
@@ -11,44 +11,44 @@
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
-<script src="admin/plugins/jquery/jquery.min.js"></script>
+<script src="backend/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="backend/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="backend/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="admin/dist/js/adminlte.js"></script>
+<script src="backend/dist/js/adminlte.js"></script>
 
 
 
 <!-- PAGE PLUGINS -->
 <!-- jQuery Mapael -->
-<script src="admin/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-<script src="admin/plugins/raphael/raphael.min.js"></script>
-<script src="admin/plugins/jquery-mapael/jquery.mapael.min.js"></script>
-<script src="admin/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<script src="backend/plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="backend/plugins/raphael/raphael.min.js"></script>
+<script src="backend/plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="backend/plugins/jquery-mapael/maps/usa_states.min.js"></script>
 <!-- SummerNote -->
-<script src="admin/plugins/summernote/summernote-bs4.min.js"></script>
+<script src="backend/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- ChartJS -->
-<script src="admin/plugins/chart.js/Chart.min.js"></script>
+<script src="backend/plugins/chart.js/Chart.min.js"></script>
 
 <!-- PAGE SCRIPTS -->
-<script src="admin/dist/js/pages/dashboard2.js"></script>
+<script src="backend/dist/js/pages/dashboard2.js"></script>
 <!-- Data Tables -->
 
 
 
 <!-- Select2 -->
-<script src="admin/plugins/select2/js/select2.full.min.js"></script>
+<script src="backend/plugins/select2/js/select2.full.min.js"></script>
 
 <!-- ================Data Table Buttons -->
-<!-- <script src="admin/plugins/datatables/dataTables.buttons.min.js"></script>
-<script src="admin/plugins/datatables/buttons.flash.min.js"></script>
-<script src="admin/plugins/datatables/jszip.min"></script>
-<script src="admin/plugins/datatables/pdfmake.min"></script>
-<script src="admin/plugins/datatables/vfs_fonts"></script>
-<script src="admin/plugins/datatables/buttons.html5.min"></script>
-<script src="admin/plugins/datatables/buttons.print.min"></script> -->
+<!-- <script src="backend/plugins/datatables/dataTables.buttons.min.js"></script>
+<script src="backend/plugins/datatables/buttons.flash.min.js"></script>
+<script src="backend/plugins/datatables/jszip.min"></script>
+<script src="backend/plugins/datatables/pdfmake.min"></script>
+<script src="backend/plugins/datatables/vfs_fonts"></script>
+<script src="backend/plugins/datatables/buttons.html5.min"></script>
+<script src="backend/plugins/datatables/buttons.print.min"></script> -->
 
 
 
@@ -57,11 +57,11 @@
 
 
 <!-- <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> -->
-<script src="admin/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="backend/plugins/datatables/jquery.dataTables.min.js"></script>
 
-<script src="admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="admin/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="backend/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="backend/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="backend/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 
 
 
@@ -76,15 +76,15 @@
 
 <!-- ADDITIONAL SCRIPTS -->
 
-<script src="admin/dist/js/demo.js"></script>
-<script src="admin/dist/js/app.js"></script>
+<script src="backend/dist/js/demo.js"></script>
+<script src="backend/dist/js/app.js"></script>
 
-<script src="admin/dist/js/switch.js"></script>
-<script src="admin/dist/js/scales.js"></script>
-<script src="admin/dist/js/scaleCalculations.js"></script>
-<script src="admin/dist/js/personalDetails.js"></script>
-<script src="admin/dist/js/registerScale.js"></script>
-<script src="admin/dist/js/searchCustomer.js"></script>
+<script src="backend/dist/js/switch.js"></script>
+<script src="backend/dist/js/scales.js"></script>
+<script src="backend/dist/js/scaleCalculations.js"></script>
+<script src="backend/dist/js/personalDetails.js"></script>
+<script src="backend/dist/js/registerScale.js"></script>
+<script src="backend/dist/js/searchCustomer.js"></script>
 
 
 
@@ -225,7 +225,7 @@ $(function() {
     $('.textarea').summernote()
 })
 </script>
-<script src="admin/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script src="backend/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 </body>
 
 
