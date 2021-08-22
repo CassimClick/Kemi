@@ -16,7 +16,7 @@ class BlogController extends BaseController
 
         helper('date');
         $this->session = session();
-        helper(['form']);
+        helper(['form', 'image']);
     }
 
 //=================Publishing new blog====================
@@ -122,31 +122,6 @@ class BlogController extends BaseController
 
         return view('pages/singleBlog', $data);
     }
-    //=================Update existing blog====================
-    public function updateBlog()
-    {
-        if (!$this->session->has('loggedUser')) {
-            return redirect()->route('login');
-        }
-        if ($this->request->getMethod() == 'post') {
-            $theId = $this->request->getVar('theId');
-            $blog = [
-                'title' => $this->request->getVar('title'),
-                'date' => $this->request->getVar('date'),
-                'description' => $this->request->getVar('description'),
-            ];
-
-            //echo json_encode($blog);
-            $request = $this->blogModel->updateBlog($theId, $blog);
-
-            if ($request) {
-                echo json_encode('blog Updated');
-            } else {
-                echo json_encode('Something Went Wrong');
-            }
-
-        }
-    }
 
     public function viewSingleBlog()
     {
@@ -175,6 +150,29 @@ class BlogController extends BaseController
             return redirect()->to(base_url() . '/blog');
 
         }
+
+    }
+
+    public function downloadPdf($blogId)
+    {
+
+        if (!$this->session->has('loggedUser')) {
+            return redirect()->to('/login');
+        }
+
+        $title = $this->blogModel->singleBlog($blogId)->title . str_shuffle('1234567890');
+        $dompdf = new \Dompdf\Dompdf();
+        $options = new \Dompdf\Options();
+
+        $data['blog'] = $this->blogModel->singleBlog($blogId);
+
+        $dompdf->loadHtml(view('pages/pdfExport', $data));
+        $dompdf->setPaper('A4', 'landscape');
+        $options->set('isRemoteEnabled', true);
+
+        $dompdf->render();
+
+        $dompdf->stream($title . ':' . '.pdf', array('Attachment' => 1));
 
     }
 
