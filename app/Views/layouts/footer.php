@@ -15,7 +15,7 @@
                         <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                             <div class="footer-widget logo-widget">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/images/logo.png" alt="" /></a>
+                                    <a href="index.html"><img src="<?=base_url()?>/assets/images/logo.png" alt="" /></a>
                                 </div>
                                 <div class="text">Our Social Profiles</div>
                                 <!-- Social Nav -->
@@ -108,20 +108,20 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/jquery.fancybox.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/parallax.min.js"></script>
-<script src="assets/js/tilt.jquery.min.js"></script>
-<script src="assets/js/jquery.paroller.min.js"></script>
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/nav-tool.js"></script>
-<script src="assets/js/jquery-ui.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="<?=base_url()?>/assets/js/jquery.js"></script>
+<script src="<?=base_url()?>/assets/js/popper.min.js"></script>
+<script src="<?=base_url()?>/assets/js/bootstrap.min.js"></script>
+<script src="<?=base_url()?>/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="<?=base_url()?>/assets/js/jquery.fancybox.js"></script>
+<script src="<?=base_url()?>/assets/js/appear.js"></script>
+<script src="<?=base_url()?>/assets/js/parallax.min.js"></script>
+<script src="<?=base_url()?>/assets/js/tilt.jquery.min.js"></script>
+<script src="<?=base_url()?>/assets/js/jquery.paroller.min.js"></script>
+<script src="<?=base_url()?>/assets/js/owl.js"></script>
+<script src="<?=base_url()?>/assets/js/wow.js"></script>
+<script src="<?=base_url()?>/assets/js/nav-tool.js"></script>
+<script src="<?=base_url()?>/assets/js/jquery-ui.js"></script>
+<script src="<?=base_url()?>/assets/js/script.js"></script>
 
 </body>
 

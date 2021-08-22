@@ -59,6 +59,8 @@ $webRoute['dashBoard'] = 'AdminController::dashBoard';
 $webRoute['register'] = 'Auth::register';
 $webRoute['blog'] = 'BlogController::index';
 $webRoute['viewBlog'] = 'BlogController::viewSingleBlog';
+$webRoute['blogDetails/(:any)'] = 'MainController::blogDetails/$1';
+
 $webRoute['deleteBlog/(:any)'] = 'BlogController::deleteBlog/$1';
 $webRoute['articles'] = 'ArticlesController::index';
 

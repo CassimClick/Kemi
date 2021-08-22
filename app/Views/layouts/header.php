@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <title>Kemi Advocates | <?=$title?></title>
     <!-- Stylesheets -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="<?=base_url()?>/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?=base_url()?>/assets/css/style.css" rel="stylesheet">
+    <link href="<?=base_url()?>/assets/css/responsive.css" rel="stylesheet">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Bellefair&family=Open+Sans:wght@300;400;700;800&family=Oswald:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?=base_url()?>/assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="<?=base_url()?>/assets/images/favicon.png" type="image/x-icon">
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,8 +38,9 @@
                 <div class="auto-container clearfix">
 
                     <div class="pull-left logo-box">
-                        <div class="logo"><a href="<?=base_url()?>"><img src="assets/images/logo.png" alt=""
-                                    title="Kemi Advocates"></a>
+                        <div class="logo">
+                            <a href="<?=base_url()?>">
+                                <img src="<?=base_url()?>/assets/images/logo.png" alt="" title="Kemi Advocates"></a>
                         </div>
                     </div>
 
@@ -126,7 +127,8 @@
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="<?=base_url()?>" title=""><img src="assets/images/logo-small.png" alt="" title=""></a>
+                        <a href="<?=base_url()?>" title=""><img src="<?=base_url()?>/assets/images/logo-small.png"
+                                alt="" title=""></a>
                     </div>
                     <!--Right Col-->
                     <div class="pull-right">

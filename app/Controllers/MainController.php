@@ -45,11 +45,15 @@ class MainController extends BaseController
         return view('pages/allNews', $data);
     }
     //=================News Details====================
-    public function newsDetails()
+    public function blogDetails($blogId)
     {
-        $data['title'] = 'News';
 
-        return view('pages/newsDetails', $data);
+        $bloTitle = $this->blogModel->singleBlog($blogId)->title;
+        $data['title'] = $bloTitle;
+        $data['blog'] = $this->blogModel->singleBlog($blogId);
+        $data['blogs'] = $this->blogModel->getAllBlogs();
+
+        return view('pages/blogDetails', $data);
     }
     //=================publications page====================
     public function publications()

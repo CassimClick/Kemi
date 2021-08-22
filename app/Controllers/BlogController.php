@@ -19,18 +19,6 @@ class BlogController extends BaseController
         helper(['form']);
     }
 
-    // public function index()
-    // {
-    //     $data['page'] = [
-    //         'title' => 'blogs',
-    //         'heading' => 'blogs',
-    //     ];
-
-    //     $data['blogs'] = $this->blogModel->getAllBlogs();
-    //     return view('admin/blog', $data);
-
-    // }
-
 //=================Publishing new blog====================
     public function index()
     {
