@@ -7,7 +7,7 @@
         </div>
         <div class="row clearfix">
 
-            <?php //$this->include('widgets/newsBlock')?>
+            <?=$this->include('widgets/newsBlock')?>
 
 
 

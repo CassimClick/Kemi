@@ -1,12 +1,26 @@
 <?php namespace App\Controllers;
 
+use App\Models\BlogModel;
+
 class MainController extends BaseController
 {
+    public $blogModel;
+    public function __construct()
+    {
+        $this->blogModel = new BlogModel();
+
+        helper('date');
+        $this->session = session();
+
+    }
     //=================Home Page====================
     public function index()
     {
         $data['title'] = 'Home Page';
+        $data['blogs'] = $this->blogModel->getAllBlogs();
+
         return view('pages/homePage', $data);
+
     }
 
     //=================About Page====================
