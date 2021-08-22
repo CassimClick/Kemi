@@ -29,7 +29,7 @@
             <strong>Blog Published Successfully</strong>
         </div>
         <?php endif;?>
-        <?php if ($session->get('deleted')): ?>
+        <?php if ($session->get('error')): ?>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -69,8 +69,8 @@
                     <div class="button-group">
                         <button onclick="viewBlog('<?=$blog->blog_id?>')" class="btn btn-sm btn-success"><i
                                 class="fas fa-eye"></i></button>
-                        <button onclick="editBlog('<?=$blog->blog_id?>')" class="btn btn-sm btn-primary"><i
-                                class="fas fa-edit"></i></button>
+                        <!-- <button onclick="editBlog('<?=$blog->blog_id?>')" class="btn btn-sm btn-primary"><i
+                                class="fas fa-edit"></i></button> -->
                         <a href="<?=base_url()?>/deleteBlog/<?=$blog->blog_id?>" class="btn btn-sm btn-danger"><i
                                 class="fas fa-trash-alt"></i></a>
                     </div>
@@ -92,9 +92,9 @@
             <div class="modal-header">
 
                 <div>
-                    <h3 id="a-title"></h3>
+                    <h3 id="blog-title"></h3>
 
-                    <spans id="a-date"></spans>
+                    <spans id="blog-date"></spans>
                 </div>
 
 
@@ -107,7 +107,7 @@
                 <img src="" id="thumbnail" alt="" style="width: 100%; height:350px">
                 <br>
 
-                <p id="a-description"></p>
+                <p id="blog-description"></p>
 
 
             </div>
@@ -121,51 +121,7 @@
     <!-- /.modal-dialog -->
 </div>
 
-<!-- A modal to edit an blog -->
-<div class="modal blogEdit fade" id="blogEdit">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
 
-                <div>
-                    <h3>Edit...</h3>
-
-                    <!-- <spans id="a-date"></spans> -->
-                </div>
-
-
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-
-                <input id="blogIdEdit" class="form-control" type="text" hidden>
-                <div class="form-group">
-                    <label for="my-input">Title</label>
-                    <input id="blogTitleEdit" class="form-control" type="text" name="">
-                </div>
-                <div class="form-group">
-                    <label for="my-input">Date</label>
-                    <input id="blogDateEdit" class="form-control" type="date" name="">
-                </div>
-
-                <div class="form-group">
-                    <label for="my-textarea">Description</label>
-                    <textarea id="blogDescEdit" class="form-control" name="" rows="3"></textarea>
-                </div>
-
-            </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" id="updateBtn" class="btn btn-primary">Update</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
 <script>
 $(function() {
     // Summernote
@@ -175,124 +131,12 @@ $(function() {
 
 
 <script>
-//=================Update blog====================
-document.querySelector('#xxx').DataTable();
-$('#updateBtn').click(function() {
-    const theId = $('#blogIdEdit')
-    const title = $('#blogTitleEdit')
-    const date = $('#blogDateEdit')
-    const description = $('#blogDescEdit')
-    const image = $('#image')
-
-    function clearInputs() {
-        const title = $('#blogTitleEdit').val(' ')
-        const date = $('#blogDateEdit').val(' ')
-        const description = $('#blogDescEdit').val(' ')
-    }
-
-    function validator(input) {
-        if (input.val() == '') {
-            input.css('border', '1px solid red')
-            return false
-        } else {
-            input.css('border', '1px solid green')
-            return true
-        }
-    }
-
-    if (validator(title) && validator(date) && validator(description)) {
-        $.ajax({
-            type: "POST",
-            url: "updateBlog",
-            dataType: "json",
-            data: {
-                theId: theId.val(),
-                title: title.val(),
-                date: date.val(),
-                description: description.val(),
-                image: image.val(),
-            },
-
-            success: function(response) {
-                $('.modal').modal('hide');
-                clearInputs()
-
-                console.log(response)
-                // Swal.fire(
-                //     '',
-                //     `${response}`,
-                //     'success'
-                // );
-                // location.reload(true);
-            }
-        });
-    }
-
-
-});
-
-//=================Publishing new blog====================
-$('#blogForm').on('submit', function(e) {
-    e.preventDefault()
-
-
-    const title = $('#blogTitle')
-    const date = $('#blogDate')
-    const description = $('#blogDescription')
-    const image = $('#image')
-
-    //alert(image.val())
-
-
-
-    function clearInputs() {
-        const title = $('#blogTitle').val(' ')
-        const date = $('#blogDate').val(' ')
-        const description = $('#blogDescription').val(' ')
-    }
-
-    function validator(input) {
-        if (input.val() == '') {
-            input.css('border', '1px solid red')
-            return fasse
-        } else {
-            input.css('border', '1px solid green')
-            return true
-        }
-    }
-    if (validator(title) && validator(date) && validator(description)) {
-        $.ajax({
-            type: "POST",
-            url: "publishBlog",
-            dataType: "json",
-            data: {
-                title: title.val(),
-                date: date.val(),
-                description: description.val(),
-                image: image.val(),
-            },
-
-            success: function(response) {
-                console.log(response)
-                // $('.modal').modal('hide');
-                // clearInputs()
-                // Swal.fire(
-                //     '',
-                //     `${response}`,
-                //     'success'
-                // );
-                // location.reload(true);
-            }
-        });
-    }
-
-})
 //=====================================
 
 function viewBlog(id) {
-    const title = $('#a-title')
-    const date = $('#a-date')
-    const description = $('#a-description')
+    const title = $('#blog-title')
+
+    const description = $('#blog-description')
     const img = $('#thumbnail')
 
     $.ajax({
@@ -303,9 +147,9 @@ function viewBlog(id) {
         },
         dataType: "json",
         success: function(response) {
-
+            console.log(response);
             title.html(response.title)
-            date.html(response.date)
+
             description.html(response.description)
             img.attr("src", response.image_url)
         }

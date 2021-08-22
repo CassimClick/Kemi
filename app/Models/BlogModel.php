@@ -30,7 +30,7 @@ class BLogModel extends Model
     {
         return $this->dataTable
             ->select()
-            ->where(['id' => $id])
+            ->where(['blog_id' => $id])
             ->get()
             ->getRow();
     }
