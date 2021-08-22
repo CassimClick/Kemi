@@ -9,17 +9,28 @@
                 </button>
             </div>
             <div class="modal-body">
-                <?=form_open_multipart(base_url('publishBlog'))?>
+                <?=form_open_multipart()?>
                 <form id="blogForm" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="my-input">Tittle</label>
-                        <input id="blogTitle" class="form-control" type="text" name="title">
+                        <input id="blogTitle" class="form-control" type="text" name="title"
+                            value="<?=set_value('title')?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Category</label>
+                        <select class="form-control" name="category" id="">
+                            <option value="Finance">Finance</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Cyber">Cyber</option>
+                            <option value="Litigation">Litigation</option>
+
+                        </select>
                     </div>
                     <textarea class="textEditor" name="description" placeholder="Place some text here"
-                        style="width: 100%; height: 300px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        style="width: 100%; height: 300px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"><?=set_value('description')?></textarea>
                     <div class="form-group">
                         <label for="my-input">Image</label>
-                        <input id="image" class="form-control" type="file" name="image-file" accept="image/*">
+                        <input id="image" class="form-control" type="file" name="image" accept="image/*">
                     </div>
             </div>
             <div class="modal-footer justify-content-between">

@@ -43,7 +43,8 @@
                             <li>Pension funds and any other institution</li>
                         </ul>
                         <div class="btns-box">
-                            <a href="<?=base_url()?>/contact" class="theme-btn btn-style-two"><span class="txt">Firm
+                            <a href="<?=base_url()?>/documents/FIRM PROFILE - KEMI ADVOCATES.pdf"
+                                class=" theme-btn btn-style-two"><span class="txt">Firm
                                     Profile
                                     <span class="arrow flaticon-download"></span></span></a>
                             <a href="<?=base_url()?>/about" class="theme-btn btn-style-three"><span class="txt">Read

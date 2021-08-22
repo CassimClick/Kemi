@@ -1,27 +1,21 @@
 <?php namespace App\Libraries;
 
-class CommonTasks{
-    function processFile($file)
+class CommonTasks
+{
+    public function processFile($file)
     {
         if ($file->isValid() && !$file->hasMoved()) {
             $randomName = $file->getRandomName();
-            if ($file->move(FCPATH . '/uploads/images/', $randomName)) {
+            $dir = '/uploads/thumbnails/';
 
+            if ($file->move(FCPATH . $dir, $randomName)) {
 
-                return    base_url() . '/uploads/images/' . $randomName;
+                return base_url() . $dir . $randomName;
             }
+        } else {
+            $this->session->setFlashdata('error', $file->getErrorString() . '' . $file->getError());
+
         }
     }
-    function processDocument($file)
-    {
-        if ($file->isValid() && !$file->hasMoved()) {
-            $randomName = $file->getRandomName();
-            if ($file->move(FCPATH . '/uploads/documents/', $randomName)) {
 
-
-                return    base_url() . '/uploads/documents/' . $randomName;
-            }
-        }
-    }
 }
-?>

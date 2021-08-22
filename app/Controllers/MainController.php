@@ -5,7 +5,7 @@ class MainController extends BaseController
     //=================Home Page====================
     public function index()
     {
-        $data['title'] = 'Kemi Advocates';
+        $data['title'] = 'Home Page';
         return view('pages/homePage', $data);
     }
 

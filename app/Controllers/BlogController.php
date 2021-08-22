@@ -19,11 +19,26 @@ class BlogController extends BaseController
         helper(['form']);
     }
 
+    // public function index()
+    // {
+    //     $data['page'] = [
+    //         'title' => 'blogs',
+    //         'heading' => 'blogs',
+    //     ];
+
+    //     $data['blogs'] = $this->blogModel->getAllBlogs();
+    //     return view('admin/blog', $data);
+
+    // }
+
+//=================Publishing new blog====================
     public function index()
     {
         if (!$this->session->has('loggedUser')) {
             return redirect()->route('login');
         }
+
+        $data = [];
         $data['page'] = [
             'title' => 'blogs',
             'heading' => 'blogs',
@@ -31,55 +46,65 @@ class BlogController extends BaseController
 
         $data['blogs'] = $this->blogModel->getAllBlogs();
 
-        return view('admin/blog', $data);
-    }
-//=================Publishing new blog====================
-    public function publishBlog()
-    {
-        if (!$this->session->has('loggedUser')) {
-            return redirect()->route('login');
-        }
         if ($this->request->getMethod() == 'post') {
-            $file = $this->request->getFile('image-file');
-            $blogId = md5(str_shuffle('abcdefghijklm567820341yriABXIENCOE'));
 
-            if ('' == $file) {
+            $rules = [
+                'image' => [
+                    'label' => 'image',
+                    'rules' => 'uploaded[image]|max_size[image,1024]|ext_in[image,png,jpeg,jpg]',
+                    'errors' => [
+                        'required' => 'You Must Select A image',
+                        'max_size' => 'image Must  Not Exceed 1 Mb',
+                        'ext_in[image,png,jpeg,jpg]' => 'Invalid Image Format Please Try Again',
+                    ],
+                ],
+                'title' => [
+                    'label' => 'title',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Please Provide Bog Title',
+
+                    ],
+                ],
+            ];
+
+            // if ($this->request->getMethod() == 'post') {
+            if ($this->validate($rules)) {
+                $file = $this->request->getFile('image');
+
+                $blogId = md5(str_shuffle('qweriopasdfghjklzxcvbnm123456789'));
                 $blog = [
-                    'title' => $this->request->getVar('title'),
                     'blog_id' => $blogId,
-
-                    'description' => $this->request->getVar('description'),
-                    'image_url' => '',
-                ];
-
-                $request = $this->blogModel->saveData($blog);
-
-                if ($request) {
-                    echo ('blog Published');
-                } else {
-                    echo ('Something Went Wrong');
-                }
-            } else {
-                $blog = [
-                    'title' => $this->request->getVar('title'),
-                    'blog_id' => $blogId,
-                    'description' => $this->request->getVar('description'),
+                    'title' => $this->request->getPost('title'),
+                    'category' => $this->request->getPost('category'),
+                    'description' => $this->request->getPost('description'),
                     'image_url' => $this->commonTask->processFile($file),
                 ];
 
-                $request = $this->blogModel->saveData($blog);
+                // print_r($blog);
+                // exit;
 
-                if ($request) {
-                    echo ('blog Published');
+                $publish = $this->blogModel->saveData($blog);
+                if ($publish) {
+                    $this->session->setFlashdata('published', 'Content Published');
+                    return redirect()->to(current_url());
+
                 } else {
-                    echo ('Something Went Wrong');
+                    $this->session->setFlashdata('error', 'Fail to Publish');
+                    return redirect()->to(current_url());
+
                 }
+
+            } else {
+                $data['validation'] = $this->validator;
+                // return redirect()->to('blog');
 
             }
 
         }
-        return redirect()->to('blog');
-        //return view('Admin/blogs');
+
+        return view('admin/blog', $data);
+
     }
     //=================All blogs====================
     public function allBlogs()

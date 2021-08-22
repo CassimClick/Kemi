@@ -1,5 +1,7 @@
+<?php $session = \Config\Services::session()?>
 <?=$this->extend('layouts/adminLayout')?>
 <?=$this->section('content')?>
+
 <div class="container p-10">
     <h3>blog page</h3>
     <div class="col-md-12">
@@ -7,6 +9,35 @@
             data-target="#blog">
             Add
         </button>
+
+        <?php if (isset($validation)): ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <?=$validation->listErrors()?>
+        </div>
+        <?php endif;?>
+
+        <?php if ($session->get('published')): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <strong>Blog Published Successfully</strong>
+        </div>
+        <?php endif;?>
+        <?php if ($session->get('error')): ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <strong>Blog Deleted Successfully</strong>
+        </div>
+        <?php endif;?>
 
     </div>
 
@@ -73,11 +104,11 @@
                 </button>
             </div>
             <div class="modal-body">
-
+                <img src="" id="thumbnail" alt="" style="width: 100%; height:350px">
+                <br>
 
                 <p id="a-description"></p>
 
-                <img src="" id="thumbnail" alt="" style="width: 100%; height:50%">
 
             </div>
             <div class="modal-footer justify-content-between">
@@ -258,7 +289,7 @@ $('#blogForm').on('submit', function(e) {
 })
 //=====================================
 
-function viewblog(id) {
+function viewBlog(id) {
     const title = $('#a-title')
     const date = $('#a-date')
     const description = $('#a-description')
@@ -266,7 +297,7 @@ function viewblog(id) {
 
     $.ajax({
         type: "POST",
-        url: "viewSingleblog",
+        url: "viewBlog",
         data: {
             id: id
         },
@@ -284,7 +315,7 @@ function viewblog(id) {
     $('.blogPreview').modal('show');
 }
 
-function editblog(blogId) {
+function editBlog(blogId) {
 
     //alert(blogId)
     $('.blogEdit').modal('show');
