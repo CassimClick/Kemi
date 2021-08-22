@@ -48,7 +48,7 @@ class BLogModel extends Model
     {
 
         return $this->dataTable
-            ->where(['id' => $id])
+            ->where(['blog_id' => $id])
             ->delete();
 
     }

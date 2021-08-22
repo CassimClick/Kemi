@@ -173,18 +173,21 @@ class BlogController extends BaseController
 
         }
     }
-    public function deleteBlog()
+    public function deleteBlog($blogId)
     {
+
         if (!$this->session->has('loggedUser')) {
             return redirect()->route('login');
         }
-        if ($this->request->getMethod() == 'post') {
-            $blogId = $this->request->getVar('id');
-            $result = $this->blogModel->deleteBlog($blogId);
 
-            echo json_encode('blog Deleted...');
+        $request = $this->blogModel->deleteBlog($blogId);
+
+        if ($request) {
+            $this->session->setFlashdata('deleted', 'Fail to Publish');
+            return redirect()->to(base_url() . '/blog');
 
         }
+
     }
 
 }

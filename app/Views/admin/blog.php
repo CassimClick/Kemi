@@ -29,7 +29,7 @@
             <strong>Blog Published Successfully</strong>
         </div>
         <?php endif;?>
-        <?php if ($session->get('error')): ?>
+        <?php if ($session->get('deleted')): ?>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -67,12 +67,12 @@
                         class="blog-thumb" src="<?=$blog->image_url?>" alt=""></td>
                 <td>
                     <div class="button-group">
-                        <button onclick="viewBlog('<?=$blog->id?>')" class="btn btn-sm btn-success"><i
+                        <button onclick="viewBlog('<?=$blog->blog_id?>')" class="btn btn-sm btn-success"><i
                                 class="fas fa-eye"></i></button>
-                        <button onclick="editBlog('<?=$blog->id?>')" class="btn btn-sm btn-primary"><i
+                        <button onclick="editBlog('<?=$blog->blog_id?>')" class="btn btn-sm btn-primary"><i
                                 class="fas fa-edit"></i></button>
-                        <button onclick="deleteBlog('<?=$blog->id?>')" class="btn btn-sm btn-danger"><i
-                                class="fas fa-trash-alt"></i></button>
+                        <a href="<?=base_url()?>/deleteBlog/<?=$blog->blog_id?>" class="btn btn-sm btn-danger"><i
+                                class="fas fa-trash-alt"></i></a>
                     </div>
                 </td>
             </tr>
@@ -193,7 +193,7 @@ $('#updateBtn').click(function() {
     function validator(input) {
         if (input.val() == '') {
             input.css('border', '1px solid red')
-            return fasse
+            return false
         } else {
             input.css('border', '1px solid green')
             return true
@@ -326,7 +326,7 @@ function editBlog(blogId) {
 
     $.ajax({
         type: "POST",
-        url: "viewSingleblog",
+        url: "viewSingleBlog",
         data: {
             id: blogId
         },
@@ -348,7 +348,7 @@ function editBlog(blogId) {
 
 
 
-function deleteblog(id) {
+function deleteBlog(id) {
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -372,23 +372,25 @@ function deleteblog(id) {
     //=================Delete blog====================
     function deleteFile(recordId) {
 
-        $.ajax({
-            type: "POST",
-            url: "deleteblog",
-            data: {
-                id: recordId
-            },
-            dataType: "json",
-            success: function(response) {
 
-                Swal.fire(
-                    'Deleted!',
-                    `${response}`,
-                    'success',
-                    location.reload(true)
-                )
-            }
-        });
+        console.log(recordId);
+        // $.ajax({
+        //     type: "POST",
+        //     url: "deleteBlog",
+        //     data: {
+        //         id: recordId
+        //     },
+        //     dataType: "json",
+        //     success: function(response) {
+
+        //         Swal.fire(
+        //             'Deleted!',
+        //             `${response}`,
+        //             'success',
+        //             location.reload(true)
+        //         )
+        //     }
+        // });
     }
 
 
