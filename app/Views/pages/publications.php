@@ -18,10 +18,6 @@
 
 
                 <?=$this->include('widgets/articleBlock')?>
-                <?=$this->include('widgets/articleBlock')?>
-                <?=$this->include('widgets/articleBlock')?>
-                <?=$this->include('widgets/articleBlock')?>
-
 
 
             </div>

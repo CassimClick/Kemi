@@ -84,10 +84,10 @@
                                             <li><a href="<?=base_url()?>/ngo">Non Profit NGO</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdownc"><a href="#">Insight</a>
+                                    <li class="dropdown"><a href="#">Insight</a>
                                         <ul>
-                                            <!-- <li><a href="<?=base_url()?>/news">News</a></li>
-                                            <li><a href="<?=base_url()?>/publications">Publications</a></li> -->
+                                            <li><a href="<?=base_url()?>/news">News</a></li>
+                                            <li><a href="<?=base_url()?>/publications">Publications</a></li>
 
                                         </ul>
                                     </li>

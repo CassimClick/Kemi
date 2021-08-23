@@ -63,7 +63,13 @@ $webRoute['downloadPdf/(:any)'] = 'BlogController::downloadPdf/$1';
 $webRoute['blogDetails/(:any)'] = 'MainController::blogDetails/$1';
 
 $webRoute['deleteBlog/(:any)'] = 'BlogController::deleteBlog/$1';
-$webRoute['articles'] = 'ArticlesController::index';
+
+//=====================================
+$webRoute['articles'] = 'ArticleController::index';
+$webRoute['viewArticle'] = 'ArticleController::viewSingleArticle';
+$webRoute['deleteArticle/(:any)'] = 'ArticleController::deleteArticle/$1';
+$webRoute['articleDetails/(:any)'] = 'MainController::publicationDetails/$1';
+$webRoute['downloadArticlePdf/(:any)'] = 'ArticleController::downloadArticlePdf/$1';
 
 $routes->map($webRoute);
 

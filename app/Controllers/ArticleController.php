@@ -1,17 +1,17 @@
 <?php namespace App\Controllers;
 
 use App\Libraries\CommonTasks;
-use App\Models\BlogModel;
+use App\Models\ArticleModel;
 
-class BlogController extends BaseController
+class ArticleController extends BaseController
 {
-    public $blogModel;
+    public $articleModel;
     public $session;
     public $commonTask;
 
     public function __construct()
     {
-        $this->blogModel = new BlogModel();
+        $this->articleModel = new ArticleModel();
         $this->commonTask = new CommonTasks();
 
         helper('date');
@@ -19,7 +19,7 @@ class BlogController extends BaseController
         helper(['form', 'image']);
     }
 
-//=================Publishing new blog====================
+//=================Publishing new Article====================
     public function index()
     {
         if (!$this->session->has('loggedUser')) {
@@ -28,11 +28,11 @@ class BlogController extends BaseController
 
         $data = [];
         $data['page'] = [
-            'title' => 'blogs',
-            'heading' => 'blogs',
+            'title' => 'Articles',
+            'heading' => 'Articles',
         ];
 
-        $data['blogs'] = $this->blogModel->getAllBlogs();
+        $data['articles'] = $this->articleModel->getAllArticles();
 
         if ($this->request->getMethod() == 'post') {
 
@@ -60,19 +60,19 @@ class BlogController extends BaseController
             if ($this->validate($rules)) {
                 $file = $this->request->getFile('image');
 
-                $blogId = md5(str_shuffle('qweriopasdfghjklzxcvbnm123456789'));
-                $blog = [
-                    'blog_id' => $blogId,
+                $articleId = md5(str_shuffle('qweriopasdfghjklzxcvbnm123456789'));
+                $article = [
+                    'Article_id' => $articleId,
                     'title' => $this->request->getPost('title'),
                     'category' => $this->request->getPost('category'),
                     'description' => $this->request->getPost('description'),
                     'image_url' => $this->commonTask->processFile($file),
                 ];
 
-                // print_r($blog);
+                // print_r($article);
                 // exit;
 
-                $publish = $this->blogModel->saveData($blog);
+                $publish = $this->articleModel->saveData($article);
                 if ($publish) {
                     $this->session->setFlashdata('published', 'Content Published');
                     return redirect()->to(current_url());
@@ -85,82 +85,82 @@ class BlogController extends BaseController
 
             } else {
                 $data['validation'] = $this->validator;
-                // return redirect()->to('blog');
+                // return redirect()->to('Article');
 
             }
 
         }
 
-        return view('admin/blog', $data);
+        return view('admin/article', $data);
 
     }
-    //=================All blogs====================
-    public function allBlogs()
+    //=================All Articles====================
+    public function allArticles()
     {
         if (!$this->session->has('loggedUser')) {
             return redirect()->route('login');
         }
         $data['page'] = [
-            'title' => 'All blogs',
-            'heading' => ' All blogs',
+            'title' => 'All Articles',
+            'heading' => ' All Articles',
         ];
         //$data['xxx'] = [3,69,6696,56];
 
-        $data['allBlogs'] = $this->blogModel->getAllBlogs();
+        $data['allArticles'] = $this->articleModel->getAllArticles();
 
-        return view('Pages/allBlogs', $data);
+        return view('Pages/allArticles', $data);
     }
-//=================get a single blog blogs====================
-    public function singleBlog($id)
+//=================get a single Article Articles====================
+    public function singleArticle($id)
     {
         $data['page'] = [
-            'title' => 'blog',
-            'heading' => 'blog',
+            'title' => 'Article',
+            'heading' => 'Article',
         ];
 
-        $data['theBlog'] = $this->blogModel->getSingleBlog($id);
+        $data['theArticle'] = $this->articleModel->getSingleArticle($id);
 
-        return view('pages/singleBlog', $data);
+        return view('pages/singleArticle', $data);
     }
 
-    public function viewSingleBlog()
+    public function viewSingleArticle()
     {
         if (!$this->session->has('loggedUser')) {
             return redirect()->route('login');
         }
         if ($this->request->getMethod() == 'post') {
-            $blogId = $this->request->getVar('id');
-            $result = $this->blogModel->singleBlog($blogId);
+            $articleId = $this->request->getVar('id');
+            $result = $this->articleModel->singleArticle($articleId);
 
             echo json_encode($result);
 
         }
     }
-    public function deleteBlog($blogId)
+    public function deleteArticle($articleId)
     {
 
         if (!$this->session->has('loggedUser')) {
             return redirect()->route('login');
         }
 
-        $request = $this->blogModel->deleteBlog($blogId);
+        $request = $this->articleModel->deleteArticle($articleId);
 
         if ($request) {
             $this->session->setFlashdata('deleted', 'Fail to Publish');
-            return redirect()->to(base_url() . '/blog');
+            return redirect()->to(base_url() . '/articles');
 
         }
 
     }
 
-    public function downloadPdf($blogId)
+    public function downloadArticlePdf($articleId)
     {
 
-        $title = $this->blogModel->singleBlog($blogId)->title . str_shuffle('1234567890');
+        $title = $this->articleModel->singleArticle($articleId)->title . str_shuffle('1234567890');
         $dompdf = new \Dompdf\Dompdf();
         $options = new \Dompdf\Options();
 
-        $data['document'] = $this->blogModel->singleBlog($blogId);
+        $data['document'] = $this->articleModel->singleArticle($articleId);
 
         $dompdf->loadHtml(view('pages/pdfExport', $data));
         $dompdf->setPaper('A4', 'portrait');

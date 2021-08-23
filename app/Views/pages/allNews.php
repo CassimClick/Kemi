@@ -18,11 +18,7 @@
         <div class="row clearfix">
 
             <?=$this->include('widgets/newsBlock')?>
-            <?=$this->include('widgets/newsBlock')?>
-            <?=$this->include('widgets/newsBlock')?>
-            <?=$this->include('widgets/newsBlock')?>
-            <?=$this->include('widgets/newsBlock')?>
-            <?=$this->include('widgets/newsBlock')?>
+
 
 
 

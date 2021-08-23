@@ -8,7 +8,7 @@
 
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <title><?=$blog->title?></title>
+    <title><?=$document->title?></title>
 
 
     <style>
@@ -29,7 +29,7 @@
 
 
     .logo {
-        width: 300px;
+        width: 200px;
         margin: 30px auto;
     }
 
@@ -48,9 +48,9 @@
         </div>
 
         <div class="content">
-            <h3 class="title"><?=$blog->title?></h3>
-            <p class="date"><?=dateFormatter($blog->created_at)?></p>
-            <div class="desc"><?=$blog->description?></div>
+            <h3 class="title"><?=$document->title?></h3>
+            <p class="date"><?=dateFormatter($document->created_at)?></p>
+            <div class="desc"><?=$document->description?></div>
 
         </div>
 

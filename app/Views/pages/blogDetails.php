@@ -36,7 +36,7 @@
                                     <div class="pull-left">
                                         <div class="btn-box">
                                             <a href="<?=base_url() . '/downloadPdf/' . $blog->blog_id?>"
-                                                class="theme-btn btn-style-two"><span class="txt">Download <i
+                                                class="theme-btn btn-style-two"><span class="txt">Download Pdfs <i
                                                         class="arrow flaticon-download"></i></span></a>
                                         </div>
                                     </div>

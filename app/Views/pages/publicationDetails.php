@@ -2,12 +2,12 @@
 <?=$this->section('content');?>
 <!-- Page Title -->
 <!-- Page Title -->
-<section class="page-title style-two" style="background:url(assets/images/typewriter.jpg)">
+<section class="page-title style-two" style="background:url(<?=$article->image_url?>)">
     <div class="auto-container">
-        <h1>Article Detail</h1>
+        <h1><?=$article->title?></h1>
         <ul class="page-breadcrumb">
             <li><a href="<?=base_url()?>">home</a></li>
-            <li>Article Detail</li>
+            <!-- <li>Article Detail</li> -->
         </ul>
     </div>
 </section>
@@ -23,35 +23,10 @@
                 <!-- Block Detail -->
                 <div class="blog-detail">
                     <div class="inner-box">
-                        <div class="image">
-                            <img src="images/resource/news-3.jpg" alt="" />
-                            <div class="category">Business</div>
-                            <ul class="post-meta">
-                                <li><span class="icon flaticon-timetable"></span>August 25, 2021</li>
-                                <li><span class="icon flaticon-email"></span>Comments 03</li>
-                                <li><span class="icon flaticon-user-2"></span>Admin</li>
-                            </ul>
-                        </div>
-                        <div class="lower-content">
-                            <h3>Creative Para Jóvenes: Designer’s UI/UX Complete Checklist.</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which don't
-                                look even slightly believable. </p>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which don't
-                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                                need to be sure there isn't anything embarrassing hidden in the middle of text. All the
-                                Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                                making this the first true generator on the Internet. </p>
-                            <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
-                                structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
-                                therefore always free from repetition, injected humour, or non-characteristic words etc.
-                            </p>
 
-                            <p>it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-                                content here', making it look like readable English. Many desktop publishing packages
-                                and web page editors now use Lorem Ipsum as their default model text, and a search for
-                                'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                        <div class="lower-content">
+                            <h3><?=$article->title?></h3>
+                            <p><?=$article->description?></p>
 
 
                             <!-- Post Share Options-->
@@ -59,8 +34,8 @@
                                 <div class="post-share-inner clearfix">
                                     <div class="pull-left">
                                         <div class="btn-box">
-                                            <a href="contact.html" class="theme-btn btn-style-two"><span
-                                                    class="txt">Download <i
+                                            <a href="<?=base_url() . '/downloadArticlePdf/' . $article->article_id?>"
+                                                class="theme-btn btn-style-two"><span class="txt">Download Pdf <i
                                                         class="arrow flaticon-download"></i></span></a>
                                         </div>
                                     </div>
@@ -113,36 +88,22 @@
                         <div class="sidebar-widget popular-posts">
                             <div class="widget-content">
                                 <div class="sidebar-title">
-                                    <h5>Recent Articles</h5>
+                                    <h5>Recent Publications</h5>
                                 </div>
+
+                                <?php foreach ($articles as $article): ?>
+
                                 <article class="">
 
-                                    <div class="text"><a href="blog-detail.html">Quis autem velo eum iure suam nihil</a>
+                                    <div class="text"><a
+                                            href="<?=base_url() . '/articleDetails/' . $article->article_id?>"><?=$article->title?></a>
                                     </div>
-                                    <div class="post-info">August 25, 2021</div>
+                                    <div class="post-info"><?=dateFormatter($article->created_at)?></div>
                                 </article>
                                 <hr>
-                                <article class="">
+                                <?php endforeach;?>
 
-                                    <div class="text"><a href="blog-detail.html">Quis autem velo eum iure suam nihil</a>
-                                    </div>
-                                    <div class="post-info">August 25, 2021</div>
-                                </article>
-                                <hr>
-                                <article class="">
 
-                                    <div class="text"><a href="blog-detail.html">Quis autem velo eum iure suam nihil</a>
-                                    </div>
-                                    <div class="post-info">August 25, 2021</div>
-                                </article>
-                                <hr>
-                                <article class="">
-
-                                    <div class="text"><a href="blog-detail.html">Quis autem velo eum iure suam nihil</a>
-                                    </div>
-                                    <div class="post-info">August 25, 2021</div>
-                                </article>
-                                <hr>
 
 
 

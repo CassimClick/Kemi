@@ -1,13 +1,16 @@
 <?php namespace App\Controllers;
 
+use App\Models\ArticleModel;
 use App\Models\BlogModel;
 
 class MainController extends BaseController
 {
     public $blogModel;
+    public $articleModel;
     public function __construct()
     {
         $this->blogModel = new BlogModel();
+        $this->articleModel = new ArticleModel();
 
         helper('date');
         $this->session = session();
@@ -41,6 +44,7 @@ class MainController extends BaseController
     public function news()
     {
         $data['title'] = 'News';
+        $data['blogs'] = $this->blogModel->getAllBlogs();
 
         return view('pages/allNews', $data);
     }
@@ -48,8 +52,8 @@ class MainController extends BaseController
     public function blogDetails($blogId)
     {
 
-        $bloTitle = $this->blogModel->singleBlog($blogId)->title;
-        $data['title'] = $bloTitle;
+        $blogTitle = $this->blogModel->singleBlog($blogId)->title;
+        $data['title'] = $blogTitle;
         $data['blog'] = $this->blogModel->singleBlog($blogId);
         $data['blogs'] = $this->blogModel->getAllBlogs();
 
@@ -59,13 +63,17 @@ class MainController extends BaseController
     public function publications()
     {
         $data['title'] = 'Publications';
+        $data['articles'] = $this->articleModel->getAllArticles();
 
         return view('pages/publications', $data);
     }
     //=================publications details====================
-    public function publicationDetails()
+    public function publicationDetails($articleId)
     {
-        $data['title'] = 'Publications';
+        $articleTitle = $this->articleModel->singleArticle($articleId)->title;
+        $data['title'] = $articleTitle;
+        $data['article'] = $this->articleModel->singleArticle($articleId);
+        $data['articles'] = $this->articleModel->getAllArticles();
 
         return view('pages/publicationDetails', $data);
     }
